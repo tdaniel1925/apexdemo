@@ -135,14 +135,6 @@ const Navigation = () => {
               </div>
             ))}
             
-            {/* Design Toggle Badge */}
-            <Link
-              href={`/design-b${pathname}`}
-              className="ml-2 text-xs font-medium text-gray-700 hover:text-cyan-600 border border-gray-200 rounded-full px-3 py-1.5 transition-colors hover:border-cyan-300"
-            >
-              Try Design B
-            </Link>
-            
             {/* Portal Button */}
             <Link
               href="/portal"
