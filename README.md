@@ -155,14 +155,15 @@ apex-website/
 Currently set to:
 - **Name**: Bill Propper
 - **Role**: CEO & Founder
-- **Location**: Atlanta, GA
+- **Location**: Sugar Land, TX
 
 Update in `/app/about/page.tsx`
 
 ### Contact Information
-- **Phone**: (404) 555-3MARK (36275)
+- **Phone**: 281.269.2300 (Local)
+- **Phone**: 888.533.6275 (Toll-Free)
 - **Email**: info@3mark.com
-- **Address**: 123 Insurance Way, Suite 500, Atlanta, GA 30303
+- **Address**: 1600 Highway 6 Ste 400, Sugar Land, TX 77478
 
 Update in `/components/layout/Footer.tsx` and `/app/contact/page.tsx`
 
@@ -283,7 +284,7 @@ Many pages use placeholder content marked with "Coming Soon". To complete:
 
 For questions or issues, contact:
 - Email: info@3mark.com
-- Phone: (404) 555-3MARK
+- Phone: 281.269.2300 or 888.533.6275
 
 ## 📄 License
 

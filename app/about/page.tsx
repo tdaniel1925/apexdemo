@@ -72,7 +72,7 @@ export default function AboutPage() {
                 <div className="w-48 h-48 mx-auto bg-gray-300 rounded-full mb-6" />
                 <p className="text-2xl font-bold">Bill Propper</p>
                 <p className="text-gray-600">CEO & Founder</p>
-                <p className="text-sm text-gray-500 mt-2">Atlanta, GA</p>
+                <p className="text-sm text-gray-500 mt-2">Sugar Land, TX</p>
               </div>
             </div>
           </div>

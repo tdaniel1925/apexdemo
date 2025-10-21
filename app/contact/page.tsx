@@ -59,7 +59,7 @@ export default function ContactPage() {
         headline="Your new career begins with one conversation"
         description="Fill out the form below and one of our experienced team members will reach out within 24 hours to answer your questions and help you get started. We respond to every inquiry personally—no automated responses, just real conversations."
         ctas={[
-          { text: 'Call Us Now', href: 'tel:4045553627', icon: Phone, variant: 'primary' },
+          { text: 'Call Us Now', href: 'tel:2812692300', icon: Phone, variant: 'primary' },
           { text: 'Email Us', href: 'mailto:info@3mark.com', icon: Mail, variant: 'secondary' }
         ]}
         images={[

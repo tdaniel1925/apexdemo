@@ -163,9 +163,11 @@ const Footer = () => {
             </div>
             <div className="text-sm text-gray-600">
               <p className="font-medium text-gray-900 mb-1">Contact</p>
-              <p>(404) 555-3MARK</p>
+              <p>281.269.2300</p>
+              <p>888.533.6275</p>
               <p>info@3mark.com</p>
-              <p className="text-xs mt-1">Atlanta, GA</p>
+              <p className="text-xs mt-2">1600 Highway 6 Ste 400</p>
+              <p className="text-xs">Sugar Land, TX 77478</p>
             </div>
           </div>
         </div>
