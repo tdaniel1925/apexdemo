@@ -21,10 +21,10 @@ export default function OpportunityPage() {
           { text: 'See Income Examples', href: '#income', icon: PlayCircle, variant: 'secondary' }
         ]}
         images={[
-          { url: 'https://images.unsplash.com/photo-1591696205602-2f950c417dd9?w=1200&q=80', alt: 'Financial Freedom' },
-          { url: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80', alt: 'Success' },
-          { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80', alt: 'Wealth Building' },
-          { url: 'https://images.unsplash.com/photo-1554224311-beee4ece3c5d?w=800&q=80', alt: 'Income Growth' }
+          { url: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80', alt: 'Financial Freedom' },
+          { url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80', alt: 'Success' },
+          { url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80', alt: 'Wealth Building' },
+          { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80', alt: 'Income Growth' }
         ]}
         stat={{
           icon: BarChart3,
