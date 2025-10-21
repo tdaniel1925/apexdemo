@@ -5,17 +5,8 @@ import Link from 'next/link';
 import Button from '@/components/ui/Button';
 import { 
   Star, 
-  TrendingUp, 
-  Users, 
-  Shield, 
-  Sparkles,
   ArrowRight,
-  CheckCircle2,
-  Phone,
-  Mail,
-  Target,
-  Zap,
-  Heart
+  CheckCircle2
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -151,37 +142,37 @@ export default function HomePage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                icon: Phone,
+                avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
                 title: 'Cold Calling Nightmare',
                 description: '100+ dials per day, 95% rejection rate, soul-crushing prospecting methods that destroy confidence.',
                 delay: '0.4s'
               },
               {
-                icon: Mail,
+                avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
                 title: 'No Lead Support',
                 description: 'Buy your own leads at $5-$50 each. Terrible quality. No marketing budget or support from company.',
                 delay: '0.5s'
               },
               {
-                icon: TrendingUp,
+                avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
                 title: 'Limited Income Potential',
                 description: 'Capped commissions, no team-building. Average agent makes $30K-$50K/year MAX working 60-hour weeks.',
                 delay: '0.6s'
               },
               {
-                icon: Shield,
+                avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
                 title: 'Complex Products',
                 description: '30+ page policy documents. Confusing policies that are hard to explain and harder to sell.',
                 delay: '0.7s'
               },
               {
-                icon: Target,
+                avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
                 title: 'No Training System',
                 description: '2-day &quot;boot camp&quot; then you&apos;re on your own. Pay for every additional training course.',
                 delay: '0.8s'
               },
               {
-                icon: Heart,
+                avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80',
                 title: 'High Failure Rate',
                 description: '90% of agents quit within their first year due to broken systems and constant rejection.',
                 delay: '0.9s'
@@ -192,10 +183,14 @@ export default function HomePage() {
                 className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all hover:border-blue-300 animate-on-scroll"
                 style={{ animation: `fadeSlideIn 1s ease-out ${problem.delay} both` }}
               >
-                <div className="inline-flex p-3 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-xl mb-4">
-                  <problem.icon className="w-6 h-6 text-blue-600" />
+                <div className="flex items-center gap-3 mb-4">
+                  <img 
+                    src={problem.avatar} 
+                    alt={problem.title}
+                    className="w-12 h-12 rounded-full object-cover ring-2 ring-blue-100"
+                  />
+                  <h3 className="text-lg font-bold text-gray-900">{problem.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{problem.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{problem.description}</p>
               </div>
             ))}
@@ -239,7 +234,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2">
             {[
               {
-                icon: Sparkles,
+                avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80',
                 badge: 'AI-POWERED',
                 title: 'AI-Powered Lead Generation',
                 description: 'Automated systems that find qualified prospects for you 24/7. AI-driven social media targeting, automated follow-ups, pre-qualified warm leads delivered daily.',
@@ -247,7 +242,7 @@ export default function HomePage() {
                 delay: '0.4s'
               },
               {
-                icon: Users,
+                avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80',
                 badge: 'UNLIMITED GROWTH',
                 title: 'Network Marketing Model',
                 description: 'Build once, earn forever through unlimited team growth. Earn on personal sales PLUS team production. Passive residual income streams and leadership bonuses.',
@@ -255,7 +250,7 @@ export default function HomePage() {
                 delay: '0.5s'
               },
               {
-                icon: Zap,
+                avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80',
                 badge: 'COMPREHENSIVE',
                 title: 'World-Class Training',
                 description: 'Proven systems that guarantee your success. Weekly coaching calls with top earners, step-by-step video courses, personal mentor assignment.',
@@ -263,7 +258,7 @@ export default function HomePage() {
                 delay: '0.6s'
               },
               {
-                icon: CheckCircle2,
+                avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80',
                 badge: 'SIMPLIFIED',
                 title: 'Simplified Products & Systems',
                 description: 'Easy-to-understand insurance products, done-for-you marketing materials, professional CRM and tools, all-in-one business platform.',
@@ -288,9 +283,11 @@ export default function HomePage() {
                     <span className="inline-flex items-center gap-1 rounded-full border border-cyan-600/30 bg-gradient-to-r from-cyan-50 to-blue-50 px-3 py-1 text-xs font-semibold text-cyan-700 shadow-sm">
                       {solution.badge}
                     </span>
-                    <div className="p-2 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg shadow-md">
-                      <solution.icon className="w-5 h-5 text-white" />
-                    </div>
+                    <img 
+                      src={solution.avatar} 
+                      alt={solution.title}
+                      className="w-10 h-10 rounded-full object-cover ring-2 ring-cyan-100"
+                    />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">{solution.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{solution.description}</p>
