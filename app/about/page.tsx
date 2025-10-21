@@ -94,38 +94,42 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: Users,
+                avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
                 title: 'Agents First',
                 description: 'Every decision we make is filtered through one question: Is this good for our agents?'
               },
               {
-                icon: Target,
+                avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80',
                 title: 'Radical Transparency',
                 description: 'No hidden fees, no misleading claims, no BS. We tell the truth, always.'
               },
               {
-                icon: TrendingUp,
+                avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80',
                 title: 'Relentless Innovation',
                 description: 'We invest heavily in AI and technology to give you an unfair advantage.'
               },
               {
-                icon: Award,
+                avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80',
                 title: 'Integrity Above All',
                 description: 'We do what is right, not what is easy. Our reputation is everything.'
               },
               {
-                icon: Users,
+                avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
                 title: 'Team Over Individual',
                 description: 'When you succeed, we all succeed. We rise together.'
               },
               {
-                icon: Sparkles,
+                avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80',
                 title: 'Excellence as Standard',
                 description: 'Good is not enough. We pursue excellence in training, support, and results.'
               }
             ].map((value, index) => (
               <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 hover:border-cyan-500 transition">
-                <value.icon className="w-8 h-8 text-cyan-600 mb-4" />
+                <img 
+                  src={value.avatar} 
+                  alt={value.title}
+                  className="w-14 h-14 rounded-full object-cover ring-2 ring-cyan-100 mb-4"
+                />
                 <h3 className="text-xl font-bold mb-2">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>

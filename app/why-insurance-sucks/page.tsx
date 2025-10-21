@@ -47,42 +47,42 @@ export default function WhyInsuranceSucksPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
-                icon: PhoneOff,
+                avatar: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=200&q=80',
                 title: 'Cold Calling Hell',
                 problem: 'Make 100+ calls per day. Get hung up on. Hear rejection constantly. Feel like a telemarketer.',
                 why: 'Traditional agencies have no better lead generation system, so they force you to cold call or buy overpriced, recycled leads.',
                 result: 'Burnout, frustration, and eventual failure.'
               },
               {
-                icon: DollarSign,
+                avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
                 title: 'Income Instability',
                 problem: 'No base salary. 100% commission. Some months you eat, some months you do not.',
                 why: 'Without a reliable lead flow and proven system, your income is completely unpredictable.',
                 result: 'Financial stress and the need to find a "real job".'
               },
               {
-                icon: XCircle,
+                avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
                 title: 'Zero Real Support',
                 problem: 'They say they will train you, then hand you a phone book and wish you luck.',
                 why: 'Most agencies do not profit unless you sell, so they do not invest in real training or support.',
                 result: 'You are left to figure everything out alone.'
               },
               {
-                icon: Target,
+                avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
                 title: 'Wrong Target Market',
                 problem: 'Selling to broke people who cannot afford premiums or who will lapse in 3 months.',
                 why: 'Cheap leads target low-income demographics with poor persistence.',
                 result: 'High chargebacks and wasted time.'
               },
               {
-                icon: TrendingDown,
+                avatar: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=200&q=80',
                 title: 'High Failure Rate',
                 problem: '90% of new agents quit within the first year. This is not a secret.',
                 why: 'The traditional model is designed to churn through agents, hoping a few survive.',
                 result: 'Your time and money wasted.'
               },
               {
-                icon: Heart,
+                avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80',
                 title: 'No Work-Life Balance',
                 problem: 'Work 60-80 hours per week just to make ends meet. Miss time with family.',
                 why: 'Inefficient processes and constant rejection require massive time investment.',
@@ -90,7 +90,11 @@ export default function WhyInsuranceSucksPage() {
               }
             ].map((issue, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 border border-gray-200">
-                <issue.icon className="w-12 h-12 text-blue-600 mb-4" />
+                <img 
+                  src={issue.avatar} 
+                  alt={issue.title}
+                  className="w-14 h-14 rounded-full object-cover ring-2 ring-blue-100 mb-4"
+                />
                 <h3 className="text-2xl font-bold mb-3">{issue.title}</h3>
                 <div className="space-y-3 text-gray-700">
                   <div>

@@ -42,10 +42,18 @@ export default function HomePage() {
               style={{ animation: 'fadeSlideIn 1s ease-out 0.1s both' }}
             >
               <div className="flex -space-x-3">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div
+                {[
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
+                  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
+                  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80',
+                  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
+                  'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80'
+                ].map((avatar, i) => (
+                  <img
                     key={i}
-                    className="w-9 h-9 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 ring-2 ring-white"
+                    src={avatar}
+                    alt="Happy agent"
+                    className="w-9 h-9 rounded-full object-cover ring-2 ring-white"
                   />
                 ))}
               </div>
