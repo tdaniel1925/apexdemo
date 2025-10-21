@@ -296,3 +296,4 @@ export default function ExamplePage() {
 
 The component is now ready to use across all your pages!
 
+
