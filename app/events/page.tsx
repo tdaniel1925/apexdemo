@@ -84,18 +84,18 @@ export default function EventsPage() {
                 type: 'Virtual'
               }
             ].map((event, index) => (
-              <div key={index} className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-2xl p-8 border border-emerald-200">
-                <div className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-emerald-100 text-emerald-700 mb-4">
+              <div key={index} className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200">
+                <div className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-cyan-100 text-cyan-700 mb-4">
                   {event.type}
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{event.name}</h3>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-700">
-                    <Calendar className="w-5 h-5 text-emerald-600" />
+                    <Calendar className="w-5 h-5 text-cyan-600" />
                     <span>{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-700">
-                    <MapPin className="w-5 h-5 text-emerald-600" />
+                    <MapPin className="w-5 h-5 text-cyan-600" />
                     <span>{event.location}</span>
                   </div>
                 </div>
@@ -107,12 +107,12 @@ export default function EventsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Experience an Apex Event
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             The energy, connection, and inspiration will change your life
           </p>
           <Link

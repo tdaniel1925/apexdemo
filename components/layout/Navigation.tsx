@@ -93,7 +93,7 @@ const Navigation = () => {
                     <button
                       className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                         item.items.some(subItem => pathname === subItem.href)
-                          ? 'text-emerald-600 bg-emerald-50'
+                          ? 'text-cyan-600 bg-cyan-50'
                           : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                       }`}
                     >
@@ -110,7 +110,7 @@ const Navigation = () => {
                             href={subItem.href}
                             className={`block px-4 py-2 text-sm transition-colors ${
                               pathname === subItem.href
-                                ? 'text-emerald-600 bg-emerald-50 font-medium'
+                                ? 'text-cyan-600 bg-cyan-50 font-medium'
                                 : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                             }`}
                           >
@@ -125,7 +125,7 @@ const Navigation = () => {
                     href={item.href || '/'}
                     className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                       pathname === item.href
-                        ? 'text-emerald-600 bg-emerald-50'
+                        ? 'text-cyan-600 bg-cyan-50'
                         : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                     }`}
                   >
@@ -188,7 +188,7 @@ const Navigation = () => {
                           href={subItem.href}
                           className={`block px-6 py-2 text-sm rounded-lg transition-colors ${
                             pathname === subItem.href
-                              ? 'text-emerald-600 bg-emerald-50 font-medium'
+                              ? 'text-cyan-600 bg-cyan-50 font-medium'
                               : 'text-gray-700 hover:bg-gray-50'
                           }`}
                           onClick={() => setMobileMenuOpen(false)}
@@ -202,7 +202,7 @@ const Navigation = () => {
                       href={item.href || '/'}
                       className={`block px-3 py-2 rounded-lg transition-colors ${
                         pathname === item.href
-                          ? 'text-emerald-600 bg-emerald-50 font-semibold'
+                          ? 'text-cyan-600 bg-cyan-50 font-semibold'
                           : 'text-gray-900 hover:bg-gray-50 font-medium'
                       }`}
                       onClick={() => setMobileMenuOpen(false)}
@@ -216,7 +216,7 @@ const Navigation = () => {
               {/* Mobile Portal Button */}
               <Link
                 href="/portal"
-                className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-medium text-white hover:bg-emerald-500 transition"
+                className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-600 px-4 py-3 text-sm font-medium text-white hover:bg-cyan-500 transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Member Portal

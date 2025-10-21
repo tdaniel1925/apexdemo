@@ -100,7 +100,7 @@ export default function ProductsPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition">
+              <div key={index} className="bg-white rounded-xl p-6 border border-slate-200 hover:border-cyan-500 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold mb-2">{product.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
                 
@@ -111,7 +111,7 @@ export default function ProductsPage() {
                   </div>
                   <div>
                     <div className="text-xs font-medium text-gray-500 mb-1">Commission:</div>
-                    <div className="text-sm font-semibold text-emerald-600">{product.commission}</div>
+                    <div className="text-sm font-semibold text-cyan-600">{product.commission}</div>
                   </div>
                   <div>
                     <div className="text-xs font-medium text-gray-500 mb-1">Avg Earnings:</div>
@@ -147,12 +147,12 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Get Contracted with Top Carriers Today
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             Start selling industry-leading products with the highest commissions
           </p>
           <Link

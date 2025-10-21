@@ -98,17 +98,17 @@ export default function WhyApexPage() {
                 features: ['Monthly bonuses', 'Annual trips', 'Car program', 'Public recognition']
               }
             ].map((solution, index) => (
-              <div key={index} className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-2xl p-8 border border-emerald-200">
-                <solution.icon className="w-12 h-12 text-emerald-600 mb-4" />
+              <div key={index} className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200">
+                <solution.icon className="w-12 h-12 text-cyan-600 mb-4" />
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-sm font-semibold text-red-600 line-through">{solution.problem}</span>
-                  <span className="text-sm font-semibold text-emerald-600">→ {solution.solution}</span>
+                  <span className="text-sm font-semibold text-cyan-600">→ {solution.solution}</span>
                 </div>
                 <p className="text-gray-700 mb-4">{solution.description}</p>
                 <ul className="space-y-2">
                   {solution.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600 text-sm">{feature}</span>
                     </li>
                   ))}
@@ -133,7 +133,7 @@ export default function WhyApexPage() {
               <thead className="bg-slate-100">
                 <tr>
                   <th className="px-6 py-4 text-left font-semibold text-gray-900">Feature</th>
-                  <th className="px-6 py-4 text-center font-semibold text-emerald-600">Apex</th>
+                  <th className="px-6 py-4 text-center font-semibold text-cyan-600">Apex</th>
                   <th className="px-6 py-4 text-center font-semibold text-gray-500">Traditional</th>
                 </tr>
               </thead>
@@ -150,7 +150,7 @@ export default function WhyApexPage() {
                 ].map((row, index) => (
                   <tr key={index}>
                     <td className="px-6 py-4 font-medium text-gray-900">{row.feature}</td>
-                    <td className="px-6 py-4 text-center text-emerald-600 font-semibold">{row.apex}</td>
+                    <td className="px-6 py-4 text-center text-cyan-600 font-semibold">{row.apex}</td>
                     <td className="px-6 py-4 text-center text-gray-500">{row.traditional}</td>
                   </tr>
                 ))}
@@ -161,12 +161,12 @@ export default function WhyApexPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Experience the Apex Advantage
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             Join thousands of agents who chose the better way
           </p>
           <Link

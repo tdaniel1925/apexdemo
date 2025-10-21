@@ -166,7 +166,7 @@ export default function RanksPage() {
                     <td className="px-4 py-4 text-center text-sm">{row.agent}</td>
                     <td className="px-4 py-4 text-center text-sm">{row.leader}</td>
                     <td className="px-4 py-4 text-center text-sm">{row.director}</td>
-                    <td className="px-4 py-4 text-center text-sm font-semibold text-emerald-600">{row.exec}</td>
+                    <td className="px-4 py-4 text-center text-sm font-semibold text-cyan-600">{row.exec}</td>
                   </tr>
                 ))}
               </tbody>
@@ -176,12 +176,12 @@ export default function RanksPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Your Journey Starts at Agent
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             Every executive started where you are now. Begin your climb today.
           </p>
           <Link

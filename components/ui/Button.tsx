@@ -12,10 +12,10 @@ const Button = ({ children, variant = 'primary', size = 'md', className, ...prop
   const baseStyles = 'inline-flex items-center justify-center gap-2 font-medium rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
-    primary: 'text-white bg-emerald-600 hover:bg-emerald-500 shadow-md hover:shadow-lg hover:-translate-y-0.5',
+    primary: 'text-white bg-cyan-600 hover:bg-cyan-500 shadow-md hover:shadow-lg hover:-translate-y-0.5',
     secondary: 'text-gray-900 bg-gray-50 border border-gray-200 hover:bg-gray-100',
     outline: 'text-gray-900 border-2 border-gray-900 hover:bg-gray-900 hover:text-white',
-    gradient: 'text-white bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-500 hover:to-blue-500 shadow-md hover:shadow-lg'
+    gradient: 'text-white bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 shadow-md hover:shadow-lg'
   };
   
   const sizes = {

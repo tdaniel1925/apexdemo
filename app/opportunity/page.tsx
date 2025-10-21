@@ -54,23 +54,23 @@ export default function OpportunityPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-2xl p-8 border border-gray-200">
-              <DollarSign className="w-12 h-12 text-emerald-600 mb-4" />
+            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-gray-200">
+              <DollarSign className="w-12 h-12 text-cyan-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3">Personal Sales</h3>
               <p className="text-gray-700 mb-4">
-                Earn up to <span className="font-bold text-emerald-600">85% commission</span> on every policy you sell.
+                Earn up to <span className="font-bold text-cyan-600">85% commission</span> on every policy you sell.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                   <span>Life insurance: $500-$5,000 per sale</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                   <span>Annuities: $2,000-$20,000 per sale</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                   <span>No commission caps or limits</span>
                 </li>
               </ul>
@@ -162,19 +162,19 @@ export default function OpportunityPage() {
             <p className="text-sm text-gray-700">
               <strong>Income Disclosure:</strong> These figures represent average earnings and are not guarantees. 
               Individual results vary based on effort, skill, and market conditions. See our{' '}
-              <Link href="/legal" className="text-emerald-600 hover:underline">legal page</Link> for full disclosure.
+              <Link href="/legal" className="text-cyan-600 hover:underline">legal page</Link> for full disclosure.
             </p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Your Income Potential is Unlimited
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             Start building wealth with Apex Affinity Group today
           </p>
           <Link

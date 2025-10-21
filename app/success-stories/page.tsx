@@ -73,12 +73,12 @@ export default function SuccessStoriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
             {stories.map((story, index) => (
-              <div key={index} className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-2xl p-8 md:p-12 border border-emerald-200">
+              <div key={index} className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 md:p-12 border border-cyan-200">
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="md:col-span-1">
-                    <div className="w-32 h-32 bg-gradient-to-br from-emerald-400 to-blue-500 rounded-full mx-auto md:mx-0 mb-4"></div>
+                    <div className="w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full mx-auto md:mx-0 mb-4"></div>
                     <h3 className="text-2xl font-bold mb-1">{story.name}</h3>
-                    <div className="text-emerald-600 font-semibold mb-2">{story.rank}</div>
+                    <div className="text-cyan-600 font-semibold mb-2">{story.rank}</div>
                     <div className="text-3xl font-bold text-gray-900">{story.income}</div>
                   </div>
                   <div className="md:col-span-2">
@@ -88,10 +88,10 @@ export default function SuccessStoriesPage() {
                         <div className="text-gray-700">{story.before}</div>
                       </div>
                       <div>
-                        <div className="text-sm font-semibold text-emerald-600 mb-1">After Apex:</div>
+                        <div className="text-sm font-semibold text-cyan-600 mb-1">After Apex:</div>
                         <div className="text-gray-900 font-medium">{story.after}</div>
                       </div>
-                      <div className="mt-6 p-6 bg-white/70 rounded-lg border-l-4 border-emerald-600">
+                      <div className="mt-6 p-6 bg-white/70 rounded-lg border-l-4 border-cyan-600">
                         <p className="text-lg italic text-gray-700">&quot;{story.quote}&quot;</p>
                       </div>
                     </div>
@@ -104,12 +104,12 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Your Success Story Starts Here
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             Join thousands of agents who transformed their lives with Apex
           </p>
           <Link

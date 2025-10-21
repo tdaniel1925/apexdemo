@@ -89,11 +89,11 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
             
             {submitStatus === 'success' && (
-              <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div className="mb-6 p-4 bg-cyan-50 border border-cyan-200 rounded-lg flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-emerald-900">Message sent successfully!</p>
-                  <p className="text-sm text-emerald-700">We will get back to you within 24 hours.</p>
+                  <p className="font-semibold text-cyan-900">Message sent successfully!</p>
+                  <p className="text-sm text-cyan-700">We will get back to you within 24 hours.</p>
                 </div>
               </div>
             )}
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     value={formData.firstName}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-emerald-600 focus:border-transparent outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                     value={formData.lastName}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-emerald-600 focus:border-transparent outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none"
                   />
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-emerald-600 focus:border-transparent outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-emerald-600 focus:border-transparent outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none"
                   />
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-emerald-600 focus:border-transparent outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent outline-none"
                 />
               </div>
 

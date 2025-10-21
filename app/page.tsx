@@ -54,7 +54,7 @@ export default function HomePage() {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div
                     key={i}
-                    className="w-9 h-9 rounded-full bg-gradient-to-br from-emerald-400 to-blue-500 ring-2 ring-white"
+                    className="w-9 h-9 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 ring-2 ring-white"
                   />
                 ))}
               </div>
@@ -76,7 +76,7 @@ export default function HomePage() {
               style={{ animation: 'fadeSlideIn 1s ease-out 0.2s forwards', opacity: 0 }}
             >
               Revolutionary Insurance Sales.{' '}
-              <span className="text-emerald-600">Extraordinary Income.</span>
+              <span className="text-cyan-600">Extraordinary Income.</span>
             </h1>
 
             {/* Subheadline */}
@@ -112,7 +112,7 @@ export default function HomePage() {
             >
               <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-emerald-600 flex items-center justify-center mx-auto mb-4 cursor-pointer hover:bg-emerald-500 transition-colors">
+                  <div className="w-20 h-20 rounded-full bg-cyan-600 flex items-center justify-center mx-auto mb-4 cursor-pointer hover:bg-cyan-500 transition-colors">
                     <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
                   </div>
                   <p className="text-gray-600 font-medium">Founder Introduction Video</p>
@@ -217,7 +217,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p
-              className="text-sm font-medium text-emerald-600 animate-on-scroll"
+              className="text-sm font-medium text-cyan-600 animate-on-scroll"
               style={{ animation: 'fadeSlideIn 1s ease-out 0.1s both' }}
             >
               The Solution
@@ -251,7 +251,7 @@ export default function HomePage() {
                 badge: 'UNLIMITED GROWTH',
                 title: 'Network Marketing Model',
                 description: 'Build once, earn forever through unlimited team growth. Earn on personal sales PLUS team production. Passive residual income streams and leadership bonuses.',
-                image: 'gradient-to-br from-emerald-400 to-teal-500',
+                image: 'gradient-to-br from-cyan-400 to-teal-500',
                 delay: '0.5s'
               },
               {
@@ -281,13 +281,13 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="inline-flex items-center gap-1 rounded-full border border-emerald-600/30 bg-emerald-50 px-2 py-0.5 text-[11px] font-medium text-emerald-700">
+                    <span className="inline-flex items-center gap-1 rounded-full border border-cyan-600/30 bg-cyan-50 px-2 py-0.5 text-[11px] font-medium text-cyan-700">
                       {solution.badge}
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                      <solution.icon className="w-5 h-5 text-emerald-600" />
+                    <div className="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                      <solution.icon className="w-5 h-5 text-cyan-600" />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
@@ -321,7 +321,7 @@ export default function HomePage() {
               { value: '47', label: 'States Covered' }
             ].map((stat, index) => (
               <div key={index} className="text-center animate-on-scroll" style={{ animation: `fadeSlideIn 1s ease-out ${0.2 + index * 0.1}s both` }}>
-                <p className="text-4xl sm:text-5xl font-bold text-emerald-600">{stat.value}</p>
+                <p className="text-4xl sm:text-5xl font-bold text-cyan-600">{stat.value}</p>
                 <p className="mt-2 text-sm text-gray-600">{stat.label}</p>
               </div>
             ))}
@@ -365,7 +365,7 @@ export default function HomePage() {
                 style={{ animation: `fadeSlideIn 1s ease-out ${testimonial.delay} both` }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-400 to-blue-500" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500" />
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
@@ -388,12 +388,12 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tighter font-bold mb-4">
             Ready to Transform Your Life?
           </h2>
-          <p className="text-lg sm:text-xl text-emerald-50 mb-8">
+          <p className="text-lg sm:text-xl text-cyan-50 mb-8">
             Join thousands of agents who&apos;ve discovered the new way to sell insurance
           </p>
           <Link href="/contact">
@@ -402,7 +402,7 @@ export default function HomePage() {
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>
-          <p className="mt-6 text-sm text-emerald-100">
+          <p className="mt-6 text-sm text-cyan-100">
             No experience required • Full training provided • Start earning in 30 days
           </p>
         </div>

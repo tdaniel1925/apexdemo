@@ -54,7 +54,7 @@ export default function TeamBuildingPage() {
                   Even the best insurance agents hit an income ceiling. There are only so many hours in a day, 
                   only so many policies you can personally sell.
                 </p>
-                <p className="font-semibold text-emerald-600">
+                <p className="font-semibold text-cyan-600">
                   The secret to true wealth is leverage—earning from the efforts of others.
                 </p>
                 <p>
@@ -70,14 +70,14 @@ export default function TeamBuildingPage() {
                     'True financial freedom'
                   ].map((point, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                       <span>{point}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-2xl p-8 border border-emerald-200">
+            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200">
               <h3 className="text-xl font-bold mb-4">Income Comparison</h3>
               <div className="space-y-6">
                 <div>
@@ -92,10 +92,10 @@ export default function TeamBuildingPage() {
                 <div>
                   <div className="flex justify-between mb-2">
                     <span className="text-sm font-medium text-gray-700">Sales + 10 Team Members</span>
-                    <span className="text-sm font-semibold text-emerald-600">$180K/year</span>
+                    <span className="text-sm font-semibold text-cyan-600">$180K/year</span>
                   </div>
                   <div className="h-3 bg-gray-200 rounded-full">
-                    <div className="h-3 bg-emerald-500 rounded-full" style={{ width: '60%' }}></div>
+                    <div className="h-3 bg-cyan-500 rounded-full" style={{ width: '60%' }}></div>
                   </div>
                 </div>
                 <div>
@@ -147,7 +147,7 @@ export default function TeamBuildingPage() {
               }
             ].map((step, index) => (
               <div key={index} className="bg-white rounded-xl p-8 border border-slate-200">
-                <div className="text-4xl font-bold text-emerald-600 mb-4">{step.step}</div>
+                <div className="text-4xl font-bold text-cyan-600 mb-4">{step.step}</div>
                 <step.icon className="w-10 h-10 text-gray-700 mb-4" />
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
@@ -169,7 +169,7 @@ export default function TeamBuildingPage() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-2xl p-8 border border-emerald-200">
+          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-lg font-bold mb-4">Team Growth Timeline</h3>
@@ -185,7 +185,7 @@ export default function TeamBuildingPage() {
                         <div className="font-semibold text-gray-900">{stage.month}</div>
                         <div className="text-sm text-gray-600">{stage.team}</div>
                       </div>
-                      <div className="text-lg font-bold text-emerald-600">{stage.income}</div>
+                      <div className="text-lg font-bold text-cyan-600">{stage.income}</div>
                     </div>
                   ))}
                 </div>
@@ -199,13 +199,13 @@ export default function TeamBuildingPage() {
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <div className="text-sm text-gray-600 mb-1">Team Overrides</div>
-                    <div className="text-2xl font-bold text-emerald-600">$420,000</div>
+                    <div className="text-2xl font-bold text-cyan-600">$420,000</div>
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <div className="text-sm text-gray-600 mb-1">Bonuses & Rewards</div>
                     <div className="text-2xl font-bold text-blue-600">$80,000</div>
                   </div>
-                  <div className="bg-emerald-600 text-white rounded-lg p-4">
+                  <div className="bg-cyan-600 text-white rounded-lg p-4">
                     <div className="text-sm mb-1">Total Annual Income</div>
                     <div className="text-3xl font-bold">$580,000</div>
                   </div>
@@ -217,12 +217,12 @@ export default function TeamBuildingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Start Building Your Empire Today
           </h2>
-          <p className="text-lg text-emerald-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             The best time to plant a tree was 20 years ago. The second best time is now.
           </p>
           <Link
