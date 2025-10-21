@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, BookOpen, Video, Users, Target, Rocket, PlayCircle, CheckCircle2, Brain, MessageCircle, Calendar, BarChart3 } from 'lucide-react';
+import { Sparkles, BookOpen, Video, Users, Target, Rocket, PlayCircle, CheckCircle2, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function TrainingPage() {

@@ -13,7 +13,6 @@ import {
   CheckCircle2,
   Phone,
   Mail,
-  Clock,
   Target,
   Zap,
   Heart
@@ -85,7 +84,7 @@ export default function HomePage() {
               className="mt-6 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto"
               style={{ animation: 'fadeSlideIn 1s ease-out 0.3s both' }}
             >
-              Join the network that's transforming lives through AI-powered insurance marketing. Build wealth, not just income.
+              Join the network that&apos;s transforming lives through AI-powered insurance marketing. Build wealth, not just income.
             </p>
 
             {/* CTAs */}
@@ -145,7 +144,7 @@ export default function HomePage() {
               className="mt-4 text-base text-gray-600 max-w-2xl mx-auto animate-on-scroll"
               style={{ animation: 'fadeSlideIn 1s ease-out 0.3s both' }}
             >
-              The old way of selling insurance is crushing agents. Here's what you're up against...
+              The old way of selling insurance is crushing agents. Here&apos;s what you&apos;re up against...
             </p>
           </div>
 
@@ -178,7 +177,7 @@ export default function HomePage() {
               {
                 icon: Target,
                 title: 'No Training System',
-                description: '2-day "boot camp" then you\'re on your own. Pay for every additional training course.',
+                description: '2-day &quot;boot camp&quot; then you&apos;re on your own. Pay for every additional training course.',
                 delay: '0.8s'
               },
               {
@@ -233,7 +232,7 @@ export default function HomePage() {
               className="mt-4 text-base text-gray-600 max-w-2xl mx-auto animate-on-scroll"
               style={{ animation: 'fadeSlideIn 1s ease-out 0.3s both' }}
             >
-              We've solved every problem plaguing traditional insurance sales
+              We&apos;ve solved every problem plaguing traditional insurance sales
             </p>
           </div>
 
@@ -350,7 +349,7 @@ export default function HomePage() {
               {
                 name: 'Marcus Williams',
                 role: 'Executive Leader',
-                quote: "The AI tools changed everything. I haven't made a cold call in months and I'm closing more deals than ever.",
+                quote: "The AI tools changed everything. I haven&apos;t made a cold call in months and I&apos;m closing more deals than ever.",
                 delay: '0.3s'
               },
               {
@@ -395,7 +394,7 @@ export default function HomePage() {
             Ready to Transform Your Life?
           </h2>
           <p className="text-lg sm:text-xl text-emerald-50 mb-8">
-            Join thousands of agents who've discovered the new way to sell insurance
+            Join thousands of agents who&apos;ve discovered the new way to sell insurance
           </p>
           <Link href="/contact">
             <Button variant="secondary" size="lg" className="bg-white text-gray-900 hover:bg-gray-100">

@@ -3,8 +3,7 @@
 import { useState } from 'react';
 import PageHero from '@/components/ui/PageHero';
 import Button from '@/components/ui/Button';
-import { Sparkles, User, LogIn, UserPlus, Mail, Lock, Rocket, PlayCircle, BookOpen, CheckCircle2, BarChart3, Users, TrendingUp } from 'lucide-react';
-import Link from 'next/link';
+import { Sparkles, LogIn, UserPlus, Mail, Lock, Rocket, PlayCircle, BookOpen, BarChart3, Users, TrendingUp } from 'lucide-react';
 
 export default function PortalPage() {
   const [isLogin, setIsLogin] = useState(true);

@@ -1,8 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Scale, Shield, FileText, AlertTriangle, Rocket, PlayCircle, BookOpen, CheckCircle2, Eye, Lock, BarChart3 } from 'lucide-react';
-import Link from 'next/link';
+import { Sparkles, Scale, Shield, FileText, AlertTriangle, Rocket, PlayCircle, Eye } from 'lucide-react';
 
 export default function LegalPage() {
   return (

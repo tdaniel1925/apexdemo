@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, DollarSign, TrendingUp, Users, Shield, Rocket, PlayCircle, BookOpen, CheckCircle2, PieChart, MessageCircle, BarChart3 } from 'lucide-react';
+import { Sparkles, DollarSign, TrendingUp, Users, Shield, Rocket, PlayCircle, CheckCircle2, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function OpportunityPage() {

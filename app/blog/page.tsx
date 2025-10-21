@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Newspaper, BookOpen, TrendingUp, Target, Rocket, PlayCircle, CheckCircle2, Users, Calendar, BarChart3 } from 'lucide-react';
+import { Sparkles, Newspaper, TrendingUp, Target, Rocket, PlayCircle, Users, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function BlogPage() {

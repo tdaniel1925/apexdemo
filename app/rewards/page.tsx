@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Award, Car, Plane, Gift, DollarSign, Rocket, PlayCircle, BookOpen, CheckCircle2, Trophy, Heart, BarChart3 } from 'lucide-react';
+import { Sparkles, Car, Plane, DollarSign, Rocket, PlayCircle, CheckCircle2, Trophy, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function RewardsPage() {

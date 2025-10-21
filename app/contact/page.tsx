@@ -3,8 +3,7 @@
 import { useState } from 'react';
 import PageHero from '@/components/ui/PageHero';
 import Button from '@/components/ui/Button';
-import { Sparkles, MessageSquare, Mail, Phone, MapPin, Send, CheckCircle2, Rocket, PlayCircle, BookOpen, Clock, BarChart3 } from 'lucide-react';
-import Link from 'next/link';
+import { Sparkles, MessageSquare, Mail, Phone, MapPin, Send, CheckCircle2, Clock } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -39,7 +38,7 @@ export default function ContactPage() {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

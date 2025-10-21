@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Calendar, Users, MapPin, Video, Rocket, PlayCircle, BookOpen, CheckCircle2, Award, Heart, BarChart3 } from 'lucide-react';
+import { Sparkles, Calendar, Users, MapPin, Rocket, PlayCircle, Award, Heart, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function EventsPage() {

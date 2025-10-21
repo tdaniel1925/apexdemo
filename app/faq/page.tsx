@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, HelpCircle, DollarSign, Users, Target, Rocket, PlayCircle, BookOpen, CheckCircle2, Shield, BarChart3, ChevronDown } from 'lucide-react';
+import { Sparkles, HelpCircle, DollarSign, Users, Shield, Rocket, PlayCircle, BarChart3, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FAQPage() {

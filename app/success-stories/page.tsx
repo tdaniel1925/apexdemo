@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Users, DollarSign, Award, TrendingUp, Rocket, PlayCircle, BookOpen, CheckCircle2, Heart, Target, BarChart3 } from 'lucide-react';
+import { Sparkles, Users, DollarSign, Award, Rocket, PlayCircle, Heart, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function SuccessStoriesPage() {
@@ -92,7 +92,7 @@ export default function SuccessStoriesPage() {
                         <div className="text-gray-900 font-medium">{story.after}</div>
                       </div>
                       <div className="mt-6 p-6 bg-white/70 rounded-lg border-l-4 border-emerald-600">
-                        <p className="text-lg italic text-gray-700">"{story.quote}"</p>
+                        <p className="text-lg italic text-gray-700">&quot;{story.quote}&quot;</p>
                       </div>
                     </div>
                   </div>
