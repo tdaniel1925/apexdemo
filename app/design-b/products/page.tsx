@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Sparkles, Shield, TrendingUp, Heart, DollarSign, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 
 export default function ProductsDesignBPage() {
   const [isClient, setIsClient] = useState(false);
@@ -74,7 +74,7 @@ export default function ProductsDesignBPage() {
     const n = cards.length;
 
     let radius = 420;
-    let speed = 0.002;
+    const speed = 0.002;
     let centerOffsetY = -60;
     let centerOffsetX = 0;
     const maxBlur = 10;

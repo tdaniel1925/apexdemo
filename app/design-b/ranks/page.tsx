@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Sparkles, ArrowRight, TrendingUp, Award, Crown } from 'lucide-react';
+import { Sparkles, ArrowRight, Award, Crown } from 'lucide-react';
 
 export default function RanksDesignBPage() {
   const ranks = [
