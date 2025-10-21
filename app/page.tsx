@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import { 
   Star, 
@@ -49,11 +50,13 @@ export default function HomePage() {
                   'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
                   'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80'
                 ].map((avatar, i) => (
-                  <img
+                  <Image
                     key={i}
                     src={avatar}
                     alt="Happy agent"
-                    className="w-9 h-9 rounded-full object-cover ring-2 ring-white"
+                    width={36}
+                    height={36}
+                    className="rounded-full object-cover ring-2 ring-white"
                   />
                 ))}
               </div>
