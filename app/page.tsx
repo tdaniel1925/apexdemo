@@ -351,18 +351,21 @@ export default function HomePage() {
               {
                 name: 'Sarah Johnson',
                 role: 'Diamond Director',
+                avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
                 quote: 'I went from struggling to pay bills to earning $15K/month in just 6 months. The AI tools changed everything for me.',
                 delay: '0.2s'
               },
               {
                 name: 'Marcus Williams',
                 role: 'Executive Leader',
+                avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
                 quote: "The AI tools changed everything. I haven&apos;t made a cold call in months and I&apos;m closing more deals than ever.",
                 delay: '0.3s'
               },
               {
                 name: 'Jennifer Lee',
                 role: 'Regional Director',
+                avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
                 quote: 'Built a team of 50 in my first year. This company is the real deal. The support and training are incredible.',
                 delay: '0.4s'
               }
@@ -373,7 +376,13 @@ export default function HomePage() {
                 style={{ animation: `fadeSlideIn 1s ease-out ${testimonial.delay} both` }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500" />
+                  <Image 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover"
+                  />
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
