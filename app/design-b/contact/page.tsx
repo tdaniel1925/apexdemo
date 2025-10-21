@@ -50,11 +50,10 @@ export default function ContactDesignBPage() {
       {/* Background */}
       <div className="parallax-bg parallax-blur bg-overlay">
         <Image
-          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=3840&q=80"
+          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=75"
           alt="Contact background"
           fill
           className="object-cover"
-          priority
         />
       </div>
 

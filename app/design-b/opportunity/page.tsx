@@ -28,11 +28,10 @@ export default function OpportunityDesignBPage() {
       {/* Background */}
       <div className="parallax-bg parallax-blur bg-overlay">
         <Image
-          src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=3840&q=80"
+          src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1920&q=75"
           alt="Financial opportunity background"
           fill
           className="object-cover"
-          priority
         />
       </div>
 

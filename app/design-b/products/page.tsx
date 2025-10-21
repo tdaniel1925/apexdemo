@@ -161,11 +161,10 @@ export default function ProductsDesignBPage() {
       {/* Background */}
       <div className="parallax-bg parallax-blur bg-overlay">
         <Image
-          src="https://images.unsplash.com/photo-1554224311-beee4ece3c5d?w=3840&q=80"
+          src="https://images.unsplash.com/photo-1554224311-beee4ece3c5d?w=1920&q=75"
           alt="Insurance products background"
           fill
           className="object-cover"
-          priority
         />
       </div>
 

@@ -17,7 +17,7 @@ export default function RanksDesignBPage() {
   return (
     <div className="overflow-hidden">
       <div className="parallax-bg parallax-blur bg-overlay">
-        <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=3840&q=80" alt="Ranks" fill className="object-cover" priority />
+        <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=75" alt="Ranks" fill className="object-cover" />
       </div>
 
       <section className="min-h-screen flex pt-32 pb-20 md:pt-40 md:pb-32 relative items-center">

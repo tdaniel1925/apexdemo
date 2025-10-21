@@ -64,7 +64,7 @@ export default function DesignBHomePage() {
       {/* Background with parallax effect */}
       <div className="parallax-bg parallax-blur bg-overlay">
         <Image
-          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=3840&q=80"
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=75"
           alt="Professional business background"
           fill
           className="object-cover"
