@@ -324,8 +324,8 @@ npm run lint         # Check for issues
 
 **Company**: Apex Affinity Group
 **Founder**: Bill Propper, CEO
-**Phone**: (800) 555-APEX (2739)
-**Email**: info@apexaffinitygroup.com
+**Phone**: (404) 555-3MARK (36275)  
+**Email**: info@3mark.com
 **Location**: Atlanta, GA
 
 ---

@@ -17,7 +17,7 @@ export default function LegalPage() {
         headline="Legal disclosures and compliance information"
         description="We believe in being upfront about everything. Read our legal disclosures, privacy policy, and terms to understand your rights and responsibilities. We operate with complete integrity and full compliance with all state and federal regulations."
         ctas={[
-          { text: 'Contact Legal', href: 'mailto:legal@apexaffinitygroup.com', icon: Rocket, variant: 'primary' },
+          { text: 'Contact Legal', href: 'mailto:legal@3mark.com', icon: Rocket, variant: 'primary' },
           { text: 'Read Disclosures', href: '#disclosures', icon: PlayCircle, variant: 'secondary' }
         ]}
         images={[

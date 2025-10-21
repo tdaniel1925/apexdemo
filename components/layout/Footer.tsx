@@ -163,8 +163,8 @@ const Footer = () => {
             </div>
             <div className="text-sm text-gray-600">
               <p className="font-medium text-gray-900 mb-1">Contact</p>
-              <p>(800) 555-APEX</p>
-              <p>info@apexaffinitygroup.com</p>
+              <p>(404) 555-3MARK</p>
+              <p>info@3mark.com</p>
               <p className="text-xs mt-1">Atlanta, GA</p>
             </div>
           </div>

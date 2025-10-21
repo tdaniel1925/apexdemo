@@ -59,8 +59,8 @@ export default function ContactPage() {
         headline="Your new career begins with one conversation"
         description="Fill out the form below and one of our experienced team members will reach out within 24 hours to answer your questions and help you get started. We respond to every inquiry personally—no automated responses, just real conversations."
         ctas={[
-          { text: 'Call Us Now', href: 'tel:8005552739', icon: Phone, variant: 'primary' },
-          { text: 'Email Us', href: 'mailto:info@apexaffinitygroup.com', icon: Mail, variant: 'secondary' }
+          { text: 'Call Us Now', href: 'tel:4045553627', icon: Phone, variant: 'primary' },
+          { text: 'Email Us', href: 'mailto:info@3mark.com', icon: Mail, variant: 'secondary' }
         ]}
         images={[
           { url: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&q=80', alt: 'Contact' },

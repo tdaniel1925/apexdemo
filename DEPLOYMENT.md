@@ -111,8 +111,8 @@ For production, add these to your hosting platform:
 ```env
 # Email service (when you integrate one)
 EMAIL_API_KEY=your_key_here
-EMAIL_FROM=noreply@apexaffinitygroup.com
-EMAIL_TO=info@apexaffinitygroup.com
+EMAIL_FROM=noreply@3mark.com
+EMAIL_TO=info@3mark.com
 
 # NextAuth (when you implement full auth)
 NEXTAUTH_URL=https://your-domain.com
@@ -192,8 +192,8 @@ DATABASE_URL=your_database_connection_string
 
 ### Update Contact Info
 
-**Phone**: Search for `(800) 555-APEX` and replace
-**Email**: Search for `info@apexaffinitygroup.com` and replace
+**Phone**: Search for `(404) 555-3MARK` and replace
+**Email**: Search for `info@3mark.com` and replace
 **Address**: Update in Footer and Contact page
 
 ### Add New Pages

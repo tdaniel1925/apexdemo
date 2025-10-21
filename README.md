@@ -160,8 +160,8 @@ Currently set to:
 Update in `/app/about/page.tsx`
 
 ### Contact Information
-- **Phone**: (800) 555-APEX (2739)
-- **Email**: info@apexaffinitygroup.com
+- **Phone**: (404) 555-3MARK (36275)
+- **Email**: info@3mark.com
 - **Address**: 123 Insurance Way, Suite 500, Atlanta, GA 30303
 
 Update in `/components/layout/Footer.tsx` and `/app/contact/page.tsx`
@@ -183,8 +183,8 @@ The contact form currently logs to console. To make it functional:
    Create `.env.local`:
    ```env
    EMAIL_API_KEY=your_key_here
-   EMAIL_FROM=noreply@apexaffinitygroup.com
-   EMAIL_TO=info@apexaffinitygroup.com
+   EMAIL_FROM=noreply@3mark.com
+   EMAIL_TO=info@3mark.com
    ```
 
 ## 🔐 Authentication
@@ -282,8 +282,8 @@ Many pages use placeholder content marked with "Coming Soon". To complete:
 ## 📞 Support
 
 For questions or issues, contact:
-- Email: info@apexaffinitygroup.com
-- Phone: (800) 555-APEX
+- Email: info@3mark.com
+- Phone: (404) 555-3MARK
 
 ## 📄 License
 
