@@ -61,7 +61,7 @@ export default function HomePage() {
               <div className="flex flex-col items-start">
                 <div className="flex items-center">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-4 h-4 fill-cyan-400 text-cyan-400" />
                   ))}
                 </div>
                 <p className="mt-1 text-xs font-medium text-gray-600">
@@ -125,11 +125,11 @@ export default function HomePage() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-red-50 relative">
+      <section className="py-20 bg-gray-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p
-              className="text-sm font-medium text-red-600 animate-on-scroll"
+              className="text-sm font-medium text-gray-600 animate-on-scroll"
               style={{ animation: 'fadeSlideIn 1s ease-out 0.1s both' }}
             >
               The Problem
@@ -189,11 +189,11 @@ export default function HomePage() {
             ].map((problem, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl border border-red-200 shadow-sm hover:shadow-md transition-shadow animate-on-scroll"
+                className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow animate-on-scroll"
                 style={{ animation: `fadeSlideIn 1s ease-out ${problem.delay} both` }}
               >
-                <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                  <problem.icon className="w-6 h-6 text-red-600" />
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <problem.icon className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{problem.title}</h3>
                 <p className="text-gray-600 text-sm">{problem.description}</p>
@@ -243,7 +243,7 @@ export default function HomePage() {
                 badge: 'AI-POWERED',
                 title: 'AI-Powered Lead Generation',
                 description: 'Automated systems that find qualified prospects for you 24/7. AI-driven social media targeting, automated follow-ups, pre-qualified warm leads delivered daily.',
-                image: 'gradient-to-br from-purple-400 to-blue-500',
+                image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80',
                 delay: '0.4s'
               },
               {
@@ -251,7 +251,7 @@ export default function HomePage() {
                 badge: 'UNLIMITED GROWTH',
                 title: 'Network Marketing Model',
                 description: 'Build once, earn forever through unlimited team growth. Earn on personal sales PLUS team production. Passive residual income streams and leadership bonuses.',
-                image: 'gradient-to-br from-cyan-400 to-teal-500',
+                image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
                 delay: '0.5s'
               },
               {
@@ -259,7 +259,7 @@ export default function HomePage() {
                 badge: 'COMPREHENSIVE',
                 title: 'World-Class Training',
                 description: 'Proven systems that guarantee your success. Weekly coaching calls with top earners, step-by-step video courses, personal mentor assignment.',
-                image: 'gradient-to-br from-orange-400 to-pink-500',
+                image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
                 delay: '0.6s'
               },
               {
@@ -267,7 +267,7 @@ export default function HomePage() {
                 badge: 'SIMPLIFIED',
                 title: 'Simplified Products & Systems',
                 description: 'Easy-to-understand insurance products, done-for-you marketing materials, professional CRM and tools, all-in-one business platform.',
-                image: 'gradient-to-br from-blue-400 to-indigo-500',
+                image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80',
                 delay: '0.7s'
               }
             ].map((solution, index) => (
@@ -276,8 +276,12 @@ export default function HomePage() {
                 className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow animate-on-scroll"
                 style={{ animation: `fadeSlideIn 1s ease-out ${solution.delay} both` }}
               >
-                <div className={`h-48 bg-${solution.image} flex items-center justify-center`}>
-                  <div className={`w-full h-full bg-${solution.image}`} />
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={solution.image} 
+                    alt={solution.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">

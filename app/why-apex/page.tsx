@@ -12,7 +12,7 @@ export default function WhyApexPage() {
         badge={{
           icon: Sparkles,
           text: 'The Complete Solution',
-          color: '#10b981'
+          color: '#0891b2'
         }}
         headline="Why Apex is different from every other company"
         description="We have solved every problem that causes agents to fail. AI eliminates cold calling. Team building creates passive income. Real training ensures success. This is not just another insurance company—it is a complete reimagination of how insurance sales should work."
@@ -29,13 +29,13 @@ export default function WhyApexPage() {
         stat={{
           icon: TrendingUp,
           text: '10X more agent success',
-          color: '#10b981'
+          color: '#0891b2'
         }}
         sectionTitle="The Apex difference"
         sectionDescription="Discover how we have fixed every broken part of traditional insurance sales."
         features={[
           { icon: Brain, text: 'AI Tools', color: '#8b5cf6' },
-          { icon: Users, text: 'Team Model', color: '#10b981' },
+          { icon: Users, text: 'Team Model', color: '#0891b2' },
           { icon: Target, text: 'Training', color: '#f59e0b' },
           { icon: Shield, text: 'Support', color: '#3b82f6' }
         ]}

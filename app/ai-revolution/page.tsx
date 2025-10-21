@@ -36,7 +36,7 @@ export default function AIRevolutionPage() {
         features={[
           { icon: Bot, text: 'Lead Gen', color: '#8b5cf6' },
           { icon: MessageSquare, text: 'Follow-Ups', color: '#10b981' },
-          { icon: BarChart3, text: 'Analytics', color: '#f59e0b' },
+          { icon: BarChart3, text: 'Analytics', color: '#0891b2' },
           { icon: Calendar, text: 'Scheduling', color: '#3b82f6' }
         ]}
       />
@@ -71,14 +71,14 @@ export default function AIRevolutionPage() {
                 features: ['Calendar integration', 'Auto-reminders', 'No-show recovery', 'Timezone handling']
               }
             ].map((tool, index) => (
-              <div key={index} className="bg-gradient-to-br from-slate-50 to-purple-50 rounded-2xl p-8 border border-slate-200">
-                <tool.icon className="w-12 h-12 text-purple-600 mb-4" />
+              <div key={index} className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 border border-slate-200">
+                <tool.icon className="w-12 h-12 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-3">{tool.title}</h3>
                 <p className="text-gray-700 mb-6">{tool.description}</p>
                 <ul className="space-y-2">
                   {tool.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -109,7 +109,7 @@ export default function AIRevolutionPage() {
               { stat: '0', label: 'Cold Calls Required', color: 'red' }
             ].map((metric, index) => (
               <div key={index} className="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                <div className="text-5xl font-bold text-purple-600 mb-2">{metric.stat}</div>
+                <div className="text-5xl font-bold text-blue-600 mb-2">{metric.stat}</div>
                 <div className="text-gray-600">{metric.label}</div>
               </div>
             ))}
@@ -118,12 +118,12 @@ export default function AIRevolutionPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-purple-600 to-indigo-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Join the AI Revolution
           </h2>
-          <p className="text-lg text-purple-50 mb-8">
+          <p className="text-lg text-blue-50 mb-8">
             Stop cold calling. Start closing. Let AI do the heavy lifting.
           </p>
           <Link

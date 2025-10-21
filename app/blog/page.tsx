@@ -60,7 +60,7 @@ export default function BlogPage() {
         features={[
           { icon: Newspaper, text: 'Industry News', color: '#8b5cf6' },
           { icon: Target, text: 'Sales Tips', color: '#10b981' },
-          { icon: Users, text: 'Success Stories', color: '#f59e0b' },
+          { icon: Users, text: 'Success Stories', color: '#0891b2' },
           { icon: TrendingUp, text: 'Team Building', color: '#3b82f6' }
         ]}
       />
@@ -71,9 +71,9 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post, index) => (
               <article key={index} className="bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition">
-                <div className="h-48 bg-gradient-to-br from-purple-100 to-indigo-100"></div>
+                <div className="h-48 bg-gradient-to-br from-blue-100 to-indigo-100"></div>
                 <div className="p-6">
-                  <div className="text-sm font-medium text-purple-600 mb-2">{post.category}</div>
+                  <div className="text-sm font-medium text-blue-600 mb-2">{post.category}</div>
                   <h3 className="text-xl font-bold mb-3">{post.title}</h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
                   <div className="flex items-center justify-between text-sm text-gray-500">
@@ -88,12 +88,12 @@ export default function BlogPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-purple-600 to-indigo-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Stay Ahead of the Competition
           </h2>
-          <p className="text-lg text-purple-50 mb-8">
+          <p className="text-lg text-blue-50 mb-8">
             Subscribe to get the latest strategies delivered to your inbox
           </p>
           <Link

@@ -12,7 +12,7 @@ export default function OpportunityPage() {
         badge={{
           icon: Sparkles,
           text: 'Financial Freedom Awaits',
-          color: '#f59e0b'
+          color: '#0891b2'
         }}
         headline="Unlock unlimited income potential"
         description="Apex Affinity Group offers a unique blend of cutting-edge AI tools, top-tier insurance products, and a powerful team-building model designed for your financial freedom. Earn high commissions plus passive income from your team."
@@ -29,15 +29,15 @@ export default function OpportunityPage() {
         stat={{
           icon: BarChart3,
           text: 'Avg $145K at Director level',
-          color: '#10b981'
+          color: '#0891b2'
         }}
         sectionTitle="What you'll discover"
         sectionDescription="Learn about compensation, income potential, and how agents build wealth at Apex."
         features={[
-          { icon: DollarSign, text: 'Commissions', color: '#10b981' },
-          { icon: TrendingUp, text: 'Team Overrides', color: '#6366f1' },
-          { icon: Users, text: 'Career Path', color: '#f59e0b' },
-          { icon: Shield, text: 'Benefits', color: '#475569' }
+          { icon: DollarSign, text: 'Commissions', color: '#0891b2' },
+          { icon: TrendingUp, text: 'Team Overrides', color: '#3b82f6' },
+          { icon: Users, text: 'Career Path', color: '#0891b2' },
+          { icon: Shield, text: 'Benefits', color: '#64748b' }
         ]}
       />
 
@@ -76,7 +76,7 @@ export default function OpportunityPage() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-gray-200">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-gray-200">
               <Users className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3">Team Overrides</h3>
               <p className="text-gray-700 mb-4">
@@ -98,23 +98,23 @@ export default function OpportunityPage() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-gray-200">
-              <TrendingUp className="w-12 h-12 text-purple-600 mb-4" />
+            <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-8 border border-gray-200">
+              <TrendingUp className="w-12 h-12 text-teal-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3">Bonuses & Rewards</h3>
               <p className="text-gray-700 mb-4">
-                Extra cash, trips, and <span className="font-bold text-purple-600">car bonuses</span> for top performers.
+                Extra cash, trips, and <span className="font-bold text-teal-600">car bonuses</span> for top performers.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
                   <span>Monthly production bonuses</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
                   <span>Luxury trips and experiences</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
                   <span>Dream car program</span>
                 </li>
               </ul>
@@ -137,12 +137,12 @@ export default function OpportunityPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { rank: 'Agent', income: '$42,000', time: 'Year 1', color: 'emerald' },
+              { rank: 'Agent', income: '$42,000', time: 'Year 1', color: 'cyan' },
               { rank: 'Senior Agent', income: '$87,000', time: '6-12 months', color: 'blue' },
-              { rank: 'Team Leader', income: '$145,000', time: '12-18 months', color: 'purple' },
-              { rank: 'Director', income: '$285,000', time: '18-24 months', color: 'orange' },
-              { rank: 'Regional Director', income: '$580,000', time: '2-3 years', color: 'pink' },
-              { rank: 'Executive Director', income: '$1.2M+', time: '3-5 years', color: 'red' }
+              { rank: 'Team Leader', income: '$145,000', time: '12-18 months', color: 'teal' },
+              { rank: 'Director', income: '$285,000', time: '18-24 months', color: 'blue' },
+              { rank: 'Regional Director', income: '$580,000', time: '2-3 years', color: 'cyan' },
+              { rank: 'Executive Director', income: '$1.2M+', time: '3-5 years', color: 'teal' }
             ].map((tier, index) => (
               <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
                 <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium bg-${tier.color}-100 text-${tier.color}-700 mb-3`}>
@@ -158,7 +158,7 @@ export default function OpportunityPage() {
             ))}
           </div>
 
-          <div className="mt-12 p-6 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
+          <div className="mt-12 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-r-lg">
             <p className="text-sm text-gray-700">
               <strong>Income Disclosure:</strong> These figures represent average earnings and are not guarantees. 
               Individual results vary based on effort, skill, and market conditions. See our{' '}

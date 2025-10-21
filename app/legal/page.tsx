@@ -33,7 +33,7 @@ export default function LegalPage() {
         sectionTitle="Legal sections"
         sectionDescription="Browse our comprehensive legal documentation and disclosures."
         features={[
-          { icon: FileText, text: 'Income Disclosure', color: '#f59e0b' },
+          { icon: FileText, text: 'Income Disclosure', color: '#3b82f6' },
           { icon: Eye, text: 'Privacy Policy', color: '#3b82f6' },
           { icon: Scale, text: 'Terms of Service', color: '#64748b' },
           { icon: Shield, text: 'Compliance', color: '#10b981' }

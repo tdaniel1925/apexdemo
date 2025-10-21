@@ -12,7 +12,7 @@ export default function WhyInsuranceSucksPage() {
         badge={{
           icon: AlertTriangle,
           text: '90% of agents quit within 1 year',
-          color: '#ef4444'
+          color: '#64748b'
         }}
         headline="Insurance sales burnout is real"
         description="The uncomfortable truth: most agents fail not because they lack talent, but because the traditional model is fundamentally designed to fail. Cold calling, buying leads, income instability, and zero support create a recipe for disaster."
@@ -29,15 +29,15 @@ export default function WhyInsuranceSucksPage() {
         stat={{
           icon: TrendingDown,
           text: '90% failure rate',
-          color: '#ef4444'
+          color: '#64748b'
         }}
         sectionTitle="The painful reality"
         sectionDescription="Understand why traditional insurance sales destroy careers and bank accounts."
         features={[
-          { icon: PhoneOff, text: 'Cold Calling', color: '#ef4444' },
-          { icon: DollarSign, text: 'No Income', color: '#f59e0b' },
+          { icon: PhoneOff, text: 'Cold Calling', color: '#64748b' },
+          { icon: DollarSign, text: 'No Income', color: '#0891b2' },
           { icon: XCircle, text: 'Zero Support', color: '#64748b' },
-          { icon: Frown, text: 'High Burnout', color: '#ef4444' }
+          { icon: Frown, text: 'High Burnout', color: '#64748b' }
         ]}
       />
 
@@ -89,16 +89,16 @@ export default function WhyInsuranceSucksPage() {
                 result: 'Burnout and resentment.'
               }
             ].map((issue, index) => (
-              <div key={index} className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border border-red-200">
-                <issue.icon className="w-12 h-12 text-red-600 mb-4" />
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 border border-gray-200">
+                <issue.icon className="w-12 h-12 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-3">{issue.title}</h3>
                 <div className="space-y-3 text-gray-700">
                   <div>
-                    <span className="font-semibold text-red-600">The Problem: </span>
+                    <span className="font-semibold text-blue-600">The Problem: </span>
                     {issue.problem}
                   </div>
                   <div>
-                    <span className="font-semibold text-orange-600">Why It Happens: </span>
+                    <span className="font-semibold text-cyan-600">Why It Happens: </span>
                     {issue.why}
                   </div>
                   <div>
@@ -126,15 +126,15 @@ export default function WhyInsuranceSucksPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { stat: '90%', label: 'Quit within first year', color: 'red' },
-              { stat: '$8,500', label: 'Average agent income (those who stay)', color: 'orange' },
-              { stat: '100+', label: 'Cold calls needed per day', color: 'red' },
-              { stat: '78%', label: 'Agents report high stress', color: 'orange' },
-              { stat: '$0', label: 'Base salary (most agencies)', color: 'red' },
-              { stat: '6 months', label: 'Average time before quitting', color: 'orange' }
+              { stat: '90%', label: 'Quit within first year', color: 'blue' },
+              { stat: '$8,500', label: 'Average agent income (those who stay)', color: 'cyan' },
+              { stat: '100+', label: 'Cold calls needed per day', color: 'blue' },
+              { stat: '78%', label: 'Agents report high stress', color: 'cyan' },
+              { stat: '$0', label: 'Base salary (most agencies)', color: 'blue' },
+              { stat: '6 months', label: 'Average time before quitting', color: 'cyan' }
             ].map((stat, index) => (
               <div key={index} className="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                <div className="text-5xl font-bold text-red-600 mb-2">{stat.stat}</div>
+                <div className="text-5xl font-bold text-blue-600 mb-2">{stat.stat}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}

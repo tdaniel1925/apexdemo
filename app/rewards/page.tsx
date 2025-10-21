@@ -12,7 +12,7 @@ export default function RewardsPage() {
         badge={{
           icon: Sparkles,
           text: 'Exclusive Benefits',
-          color: '#f59e0b'
+          color: '#0891b2'
         }}
         headline="Live the life you have always dreamed of"
         description="At Apex, we believe in rewarding hard work and dedication beyond just commissions. Our comprehensive rewards program includes cash bonuses, luxury trips, car programs, and public recognition designed to elevate your lifestyle and celebrate your achievements."
@@ -29,15 +29,15 @@ export default function RewardsPage() {
         stat={{
           icon: BarChart3,
           text: '$5M+ in rewards paid',
-          color: '#10b981'
+          color: '#0891b2'
         }}
         sectionTitle="Reward categories"
         sectionDescription="Explore the comprehensive benefits and incentives available to Apex agents."
         features={[
-          { icon: DollarSign, text: 'Cash Bonuses', color: '#10b981' },
+          { icon: DollarSign, text: 'Cash Bonuses', color: '#0891b2' },
           { icon: Plane, text: 'Luxury Trips', color: '#3b82f6' },
           { icon: Car, text: 'Car Program', color: '#ef4444' },
-          { icon: Trophy, text: 'Recognition', color: '#f59e0b' }
+          { icon: Trophy, text: 'Recognition', color: '#0891b2' }
         ]}
       />
 
@@ -71,14 +71,14 @@ export default function RewardsPage() {
                 features: ['Stage recognition', 'Trophy awards', 'Social media features', 'Legacy building']
               }
             ].map((reward, index) => (
-              <div key={index} className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
-                <reward.icon className="w-12 h-12 text-amber-600 mb-4" />
+              <div key={index} className="bg-gradient-to-br from-cyan-50 to-orange-50 rounded-2xl p-8 border border-cyan-200">
+                <reward.icon className="w-12 h-12 text-cyan-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-3">{reward.title}</h3>
                 <p className="text-gray-700 mb-6">{reward.description}</p>
                 <ul className="space-y-2">
                   {reward.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -90,12 +90,12 @@ export default function RewardsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-amber-600 to-orange-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 to-orange-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Start Earning Rewards Today
           </h2>
-          <p className="text-lg text-amber-50 mb-8">
+          <p className="text-lg text-cyan-50 mb-8">
             These benefits are not just for top producers—they are available to anyone willing to work for them
           </p>
           <Link

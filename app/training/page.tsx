@@ -35,7 +35,7 @@ export default function TrainingPage() {
         sectionDescription="Everything you need to master insurance sales and team building."
         features={[
           { icon: BookOpen, text: 'Bootcamp', color: '#6366f1' },
-          { icon: Video, text: 'Video Library', color: '#10b981' },
+          { icon: Video, text: 'Video Library', color: '#0891b2' },
           { icon: Users, text: 'Live Coaching', color: '#f59e0b' },
           { icon: Target, text: 'Mentorship', color: '#ef4444' }
         ]}
@@ -80,7 +80,7 @@ export default function TrainingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-indigo-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl tracking-tighter font-bold mb-4">
             Start Your Training Journey
