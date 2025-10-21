@@ -29,8 +29,6 @@ export default function DesignBHomePage() {
       } else if (header) {
         (header as HTMLElement).style.transform = 'translateY(-100%)';
       }
-      
-      lastScroll = scrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
