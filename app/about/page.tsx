@@ -1,8 +1,9 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Users, Target, Award, TrendingUp, Rocket, PlayCircle, BookOpen, BarChart3 } from 'lucide-react';
+import { Sparkles, Users, Target, Award, Rocket, PlayCircle, BookOpen, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -125,10 +126,12 @@ export default function AboutPage() {
               }
             ].map((value, index) => (
               <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 hover:border-cyan-500 transition">
-                <img 
+                <Image 
                   src={value.avatar} 
                   alt={value.title}
-                  className="w-14 h-14 rounded-full object-cover ring-2 ring-cyan-100 mb-4"
+                  width={56}
+                  height={56}
+                  className="rounded-full object-cover ring-2 ring-cyan-100 mb-4"
                 />
                 <h3 className="text-xl font-bold mb-2">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>

@@ -6,8 +6,7 @@ import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import { 
   Star, 
-  ArrowRight,
-  CheckCircle2
+  ArrowRight
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -195,10 +194,12 @@ export default function HomePage() {
                 style={{ animation: `fadeSlideIn 1s ease-out ${problem.delay} both` }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <img 
+                  <Image 
                     src={problem.avatar} 
                     alt={problem.title}
-                    className="w-12 h-12 rounded-full object-cover ring-2 ring-blue-100"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover ring-2 ring-blue-100"
                   />
                   <h3 className="text-lg font-bold text-gray-900">{problem.title}</h3>
                 </div>
@@ -282,11 +283,12 @@ export default function HomePage() {
                 className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow animate-on-scroll"
                 style={{ animation: `fadeSlideIn 1s ease-out ${solution.delay} both` }}
               >
-                <div className="h-48 overflow-hidden">
-                  <img 
+                <div className="h-48 overflow-hidden relative">
+                  <Image 
                     src={solution.image} 
                     alt={solution.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -294,10 +296,12 @@ export default function HomePage() {
                     <span className="inline-flex items-center gap-1 rounded-full border border-cyan-600/30 bg-gradient-to-r from-cyan-50 to-blue-50 px-3 py-1 text-xs font-semibold text-cyan-700 shadow-sm">
                       {solution.badge}
                     </span>
-                    <img 
+                    <Image 
                       src={solution.avatar} 
                       alt={solution.title}
-                      className="w-10 h-10 rounded-full object-cover ring-2 ring-cyan-100"
+                      width={40}
+                      height={40}
+                      className="rounded-full object-cover ring-2 ring-cyan-100"
                     />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">{solution.title}</h3>

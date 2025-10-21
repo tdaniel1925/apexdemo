@@ -1,8 +1,9 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { AlertTriangle, XCircle, TrendingDown, PhoneOff, DollarSign, Frown, Rocket, PlayCircle, Target, Heart } from 'lucide-react';
+import { AlertTriangle, XCircle, TrendingDown, PhoneOff, DollarSign, Frown, Rocket, PlayCircle } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function WhyInsuranceSucksPage() {
   return (
@@ -90,10 +91,12 @@ export default function WhyInsuranceSucksPage() {
               }
             ].map((issue, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 border border-gray-200">
-                <img 
+                <Image 
                   src={issue.avatar} 
                   alt={issue.title}
-                  className="w-14 h-14 rounded-full object-cover ring-2 ring-blue-100 mb-4"
+                  width={56}
+                  height={56}
+                  className="rounded-full object-cover ring-2 ring-blue-100 mb-4"
                 />
                 <h3 className="text-2xl font-bold mb-3">{issue.title}</h3>
                 <div className="space-y-3 text-gray-700">
