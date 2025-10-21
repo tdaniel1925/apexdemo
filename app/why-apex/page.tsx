@@ -1,8 +1,9 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Brain, Users, Target, CheckCircle2, Zap, Shield, Rocket, PlayCircle, TrendingUp, Award } from 'lucide-react';
+import { Sparkles, CheckCircle2, Rocket, PlayCircle, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function WhyApexPage() {
   return (
@@ -34,10 +35,10 @@ export default function WhyApexPage() {
         sectionTitle="The Apex difference"
         sectionDescription="Discover how we have fixed every broken part of traditional insurance sales."
         features={[
-          { icon: Brain, text: 'AI Tools', color: '#8b5cf6' },
-          { icon: Users, text: 'Team Model', color: '#0891b2' },
-          { icon: Target, text: 'Training', color: '#f59e0b' },
-          { icon: Shield, text: 'Support', color: '#3b82f6' }
+          { icon: Sparkles, text: 'AI Tools', color: '#0891b2' },
+          { icon: Sparkles, text: 'Team Model', color: '#0891b2' },
+          { icon: Sparkles, text: 'Training', color: '#0891b2' },
+          { icon: Sparkles, text: 'Support', color: '#3b82f6' }
         ]}
       />
 
@@ -56,42 +57,42 @@ export default function WhyApexPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
-                icon: Brain,
+                avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80',
                 problem: 'Cold Calling',
                 solution: 'AI Lead Generation',
                 description: 'Our AI finds perfect prospects automatically. No more dialing for dollars. No more rejection. Just warm, qualified leads delivered to you daily.',
                 features: ['Pre-qualified prospects', 'Social media targeting', 'Database mining', 'Real-time alerts']
               },
               {
-                icon: Users,
+                avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80',
                 problem: 'Income Instability',
                 solution: 'Team Building Model',
                 description: 'Build a team and earn passive income from their sales. Your income becomes predictable and grows exponentially, even when you are not working.',
                 features: ['5-20% team overrides', 'Compound growth', 'Passive income streams', 'Financial security']
               },
               {
-                icon: Target,
+                avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80',
                 problem: 'No Training',
                 solution: 'Comprehensive System',
                 description: 'Six-week onboarding, weekly coaching, extensive video library, and personal mentorship. We invest in your success.',
                 features: ['6-week bootcamp', 'Live coaching calls', 'Video training library', '1-on-1 mentorship']
               },
               {
-                icon: Shield,
+                avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
                 problem: 'Zero Support',
                 solution: 'Real Team Support',
                 description: 'You are never alone. Access to top producers, dedicated support team, and a thriving community of agents who help each other succeed.',
                 features: ['24/7 support', 'Private community', 'Team collaboration', 'Mentorship program']
               },
               {
-                icon: Zap,
+                avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
                 problem: 'Bad Leads',
                 solution: 'Quality Over Quantity',
                 description: 'AI targets affluent prospects who can afford premiums and have genuine needs. Stop wasting time on tire-kickers.',
                 features: ['Income-qualified leads', 'Needs-based targeting', 'High conversion rates', 'Better persistence']
               },
               {
-                icon: Award,
+                avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80',
                 problem: 'No Recognition',
                 solution: 'Rewards & Incentives',
                 description: 'Cash bonuses, luxury trips, car programs, and public recognition for your achievements. We celebrate wins.',
@@ -99,9 +100,15 @@ export default function WhyApexPage() {
               }
             ].map((solution, index) => (
               <div key={index} className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200">
-                <solution.icon className="w-12 h-12 text-cyan-600 mb-4" />
+                <Image 
+                  src={solution.avatar} 
+                  alt={solution.solution}
+                  width={56}
+                  height={56}
+                  className="rounded-full object-cover ring-2 ring-cyan-100 mb-4"
+                />
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-sm font-semibold text-red-600 line-through">{solution.problem}</span>
+                  <span className="text-sm font-semibold text-gray-500 line-through">{solution.problem}</span>
                   <span className="text-sm font-semibold text-cyan-600">→ {solution.solution}</span>
                 </div>
                 <p className="text-gray-700 mb-4">{solution.description}</p>
