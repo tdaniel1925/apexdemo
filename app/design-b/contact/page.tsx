@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { Sparkles, Mail, Phone, MapPin, Send, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Sparkles, Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
 
 export default function ContactDesignBPage() {
   const [formData, setFormData] = useState({

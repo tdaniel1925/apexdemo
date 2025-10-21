@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Sparkles, ArrowRight, HelpCircle } from 'lucide-react';
+import { ArrowRight, HelpCircle } from 'lucide-react';
 
 export default function FAQDesignBPage() {
   const faqs = [

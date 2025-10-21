@@ -8,7 +8,6 @@ import { Star, ArrowRight, Sparkles, MapPin, Utensils, Bed, UserCheck } from 'lu
 export default function DesignBHomePage() {
   useEffect(() => {
     // Parallax effect
-    let lastScroll = 0;
     const parallaxBg = document.querySelector('.parallax-bg');
     const header = document.querySelector('header');
     
