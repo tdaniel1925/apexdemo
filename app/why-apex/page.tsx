@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Brain, Users, Target, CheckCircle2, Zap, Shield, Rocket, PlayCircle, BookOpen, TrendingUp, Heart, Award } from 'lucide-react';
+import { Sparkles, Brain, Users, Target, CheckCircle2, Zap, Shield, Rocket, PlayCircle, TrendingUp, Award } from 'lucide-react';
 import Link from 'next/link';
 
 export default function WhyApexPage() {

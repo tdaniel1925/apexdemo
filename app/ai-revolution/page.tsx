@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { Sparkles, Bot, BarChart3, MessageSquare, Calendar, FileText, Brain, Zap, ShieldCheck, Rocket, PlayCircle, BookOpen, CheckCircle2, PieChart, TrendingUp } from 'lucide-react';
+import { Sparkles, Bot, BarChart3, MessageSquare, Brain, Zap, ShieldCheck, Rocket, PlayCircle, CheckCircle2, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 
 export default function AIRevolutionPage() {

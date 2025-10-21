@@ -2,6 +2,7 @@
 
 import { LucideIcon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect } from 'react';
 
 interface HeroBadge {
@@ -112,28 +113,40 @@ export default function PageHero({
                 <div className="relative rounded-[14px] border border-slate-200 bg-white p-2 sm:p-3">
                   <div className="grid grid-cols-2 gap-2 sm:gap-3">
                     <div className="col-span-1 flex flex-col gap-2 sm:gap-3">
-                      <img
-                        src={images[0]?.url}
-                        alt={images[0]?.alt || 'Image 1'}
-                        className="h-32 sm:h-40 w-full object-cover rounded-md border border-slate-200"
-                      />
-                      <img
-                        src={images[1]?.url}
-                        alt={images[1]?.alt || 'Image 2'}
-                        className="h-28 sm:h-36 w-full object-cover rounded-md border border-slate-200"
-                      />
+                      <div className="h-32 sm:h-40 w-full relative overflow-hidden rounded-md border border-slate-200">
+                        <Image
+                          src={images[0]?.url}
+                          alt={images[0]?.alt || 'Image 1'}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="h-28 sm:h-36 w-full relative overflow-hidden rounded-md border border-slate-200">
+                        <Image
+                          src={images[1]?.url}
+                          alt={images[1]?.alt || 'Image 2'}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
                     </div>
                     <div className="col-span-1 flex flex-col gap-2 sm:gap-3">
-                      <img
-                        src={images[2]?.url}
-                        alt={images[2]?.alt || 'Image 3'}
-                        className="h-28 sm:h-36 w-full object-cover rounded-md border border-slate-200"
-                      />
-                      <img
-                        src={images[3]?.url}
-                        alt={images[3]?.alt || 'Image 4'}
-                        className="h-32 sm:h-40 w-full object-cover rounded-md border border-slate-200"
-                      />
+                      <div className="h-28 sm:h-36 w-full relative overflow-hidden rounded-md border border-slate-200">
+                        <Image
+                          src={images[2]?.url}
+                          alt={images[2]?.alt || 'Image 3'}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="h-32 sm:h-40 w-full relative overflow-hidden rounded-md border border-slate-200">
+                        <Image
+                          src={images[3]?.url}
+                          alt={images[3]?.alt || 'Image 4'}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
 

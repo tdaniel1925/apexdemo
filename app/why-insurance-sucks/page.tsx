@@ -1,7 +1,7 @@
 'use client';
 
 import PageHero from '@/components/ui/PageHero';
-import { AlertTriangle, XCircle, TrendingDown, PhoneOff, DollarSign, Frown, Rocket, PlayCircle, BookOpen, CheckCircle2, Target, Heart } from 'lucide-react';
+import { AlertTriangle, XCircle, TrendingDown, PhoneOff, DollarSign, Frown, Rocket, PlayCircle, Target, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 export default function WhyInsuranceSucksPage() {
