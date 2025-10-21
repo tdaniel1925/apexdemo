@@ -189,14 +189,14 @@ export default function HomePage() {
             ].map((problem, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow animate-on-scroll"
+                className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all hover:border-blue-300 animate-on-scroll"
                 style={{ animation: `fadeSlideIn 1s ease-out ${problem.delay} both` }}
               >
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                <div className="inline-flex p-3 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-xl mb-4">
                   <problem.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{problem.title}</h3>
-                <p className="text-gray-600 text-sm">{problem.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{problem.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{problem.description}</p>
               </div>
             ))}
           </div>
@@ -284,20 +284,16 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="inline-flex items-center gap-1 rounded-full border border-cyan-600/30 bg-cyan-50 px-2 py-0.5 text-[11px] font-medium text-cyan-700">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="inline-flex items-center gap-1 rounded-full border border-cyan-600/30 bg-gradient-to-r from-cyan-50 to-blue-50 px-3 py-1 text-xs font-semibold text-cyan-700 shadow-sm">
                       {solution.badge}
                     </span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
-                      <solution.icon className="w-5 h-5 text-cyan-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
-                      <p className="text-gray-600 text-sm">{solution.description}</p>
+                    <div className="p-2 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg shadow-md">
+                      <solution.icon className="w-5 h-5 text-white" />
                     </div>
                   </div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">{solution.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{solution.description}</p>
                 </div>
               </div>
             ))}
