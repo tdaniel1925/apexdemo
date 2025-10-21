@@ -25,6 +25,7 @@ const Navigation = () => {
     { name: 'About', href: '/about' },
     { name: 'Opportunity', href: '/opportunity' },
     { name: 'AI Tools', href: '/ai-revolution' },
+    { name: 'Events', href: '/events' },
     {
       name: 'Why Apex',
       items: [
@@ -47,7 +48,6 @@ const Navigation = () => {
       name: 'Resources',
       items: [
         { name: 'Training & Support', href: '/training' },
-        { name: 'Events & Calendar', href: '/events' },
         { name: 'Blog', href: '/blog' },
         { name: 'Legal & Compliance', href: '/legal' },
       ]
