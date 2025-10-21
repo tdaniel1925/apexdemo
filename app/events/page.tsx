@@ -345,77 +345,75 @@ export default function EventsPage() {
 
       {/* Event Detail Modal */}
       {selectedEvent && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="relative h-64">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
+          <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto my-8">
+            <div className="relative h-80">
               <Image
                 src={selectedEvent.image}
                 alt={selectedEvent.title}
                 fill
-                className="object-cover"
+                className="object-cover rounded-t-2xl"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-t-2xl" />
               <button
                 onClick={() => setSelectedEvent(null)}
-                className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-gray-100 transition"
+                className="absolute top-4 right-4 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition shadow-lg"
               >
-                <X className="w-6 h-6" />
+                <X className="w-6 h-6 text-gray-900" />
               </button>
               {selectedEvent.isVirtual && (
-                <div className="absolute top-4 left-4 bg-blue-600 text-white px-4 py-2 rounded-full font-medium flex items-center gap-2">
+                <div className="absolute top-4 left-4 bg-blue-600 text-white px-4 py-2 rounded-full font-medium flex items-center gap-2 shadow-lg">
                   <Video className="w-5 h-5" />
                   Virtual Event
                 </div>
               )}
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm ${
+                    selectedEvent.type === 'Convention' ? 'bg-purple-600/90 text-white' :
+                    selectedEvent.type === 'Workshop' ? 'bg-blue-600/90 text-white' :
+                    selectedEvent.type === 'Webinar' ? 'bg-teal-600/90 text-white' :
+                    selectedEvent.type === 'Mastermind' ? 'bg-cyan-600/90 text-white' :
+                    'bg-amber-600/90 text-white'
+                  }`}>
+                    {selectedEvent.type}
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">{selectedEvent.title}</h2>
+                <div className="flex flex-wrap gap-4 text-white/90">
+                  <div className="flex items-center gap-2 backdrop-blur-sm bg-black/20 px-3 py-1 rounded-lg">
+                    <Calendar className="w-4 h-4" />
+                    <span className="text-sm font-medium">{new Date(selectedEvent.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                  </div>
+                  <div className="flex items-center gap-2 backdrop-blur-sm bg-black/20 px-3 py-1 rounded-lg">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text-sm font-medium">{selectedEvent.location}</span>
+                  </div>
+                  <div className="flex items-center gap-2 backdrop-blur-sm bg-black/20 px-3 py-1 rounded-lg">
+                    <Users className="w-4 h-4" />
+                    <span className="text-sm font-medium">{selectedEvent.attendees.toLocaleString()} attendees</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="p-8">
-              <div className="flex items-center gap-2 mb-4">
-                <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                  selectedEvent.type === 'Convention' ? 'bg-purple-100 text-purple-700' :
-                  selectedEvent.type === 'Workshop' ? 'bg-blue-100 text-blue-700' :
-                  selectedEvent.type === 'Webinar' ? 'bg-teal-100 text-teal-700' :
-                  selectedEvent.type === 'Mastermind' ? 'bg-cyan-100 text-cyan-700' :
-                  'bg-amber-100 text-amber-700'
-                }`}>
-                  {selectedEvent.type}
-                </span>
-              </div>
-              <h2 className="text-3xl font-bold mb-6">{selectedEvent.title}</h2>
-              
-              <div className="grid md:grid-cols-2 gap-4 mb-6 p-4 bg-gray-50 rounded-xl">
+              <div className="grid md:grid-cols-2 gap-4 mb-6 p-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl border border-gray-200">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-cyan-100 rounded-lg">
-                    <Calendar className="w-5 h-5 text-cyan-600" />
+                  <div className="p-3 bg-cyan-100 rounded-xl">
+                    <Clock className="w-6 h-6 text-cyan-600" />
                   </div>
                   <div>
-                    <div className="text-sm text-gray-600">Date</div>
-                    <div className="font-semibold">{new Date(selectedEvent.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+                    <div className="text-sm text-gray-600 font-medium">Time</div>
+                    <div className="font-bold text-gray-900">{selectedEvent.time}</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-cyan-100 rounded-lg">
-                    <Clock className="w-5 h-5 text-cyan-600" />
+                  <div className="p-3 bg-purple-100 rounded-xl">
+                    <Ticket className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <div className="text-sm text-gray-600">Time</div>
-                    <div className="font-semibold">{selectedEvent.time}</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="p-2 bg-cyan-100 rounded-lg">
-                    <MapPin className="w-5 h-5 text-cyan-600" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-600">Location</div>
-                    <div className="font-semibold">{selectedEvent.location}</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="p-2 bg-cyan-100 rounded-lg">
-                    <Users className="w-5 h-5 text-cyan-600" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-600">Expected Attendees</div>
-                    <div className="font-semibold">{selectedEvent.attendees.toLocaleString()}</div>
+                    <div className="text-sm text-gray-600 font-medium">Event Type</div>
+                    <div className="font-bold text-gray-900">{selectedEvent.type}</div>
                   </div>
                 </div>
               </div>
