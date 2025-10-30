@@ -1,0 +1,810 @@
+---
+alwaysApply: true
+---
+# Product Requirements Document
+## Apex Affinity Group - MLM Member Portal & Back-Office System
+
+**Version:** 2.0  
+**Date:** October 30, 2025  
+**Status:** Enhanced Draft (Incorporating Proven Features)  
+**Document Owner:** Product Management Team  
+
+---
+
+## 1. Executive Summary
+
+### 1.1 Purpose
+This document outlines the requirements for developing a comprehensive MLM (Multi-Level Marketing) back-office system for Apex Affinity Group distributors. The system will serve as an add-on module to the existing platform, providing enterprise-level functionality for distributor management, commission tracking, and network visualization. This version incorporates proven features and lessons learned from the previous Apex system implementation.
+
+### 1.2 Scope
+The member portal will provide a full-featured back-office system enabling distributors to manage their business operations, track performance metrics, visualize their organization structure, and monitor commission earnings through a binary compensation plan with override capabilities. The system will leverage existing integrations and workflows that have proven successful.
+
+### 1.3 Key Objectives
+- Deliver an enterprise-grade MLM back-office solution with proven features
+- Enable real-time tracking of sales and commissions with automated calculations
+- Provide intuitive visualization of binary tree structures
+- Support comprehensive reporting and analytics with downloadable Excel reports
+- Ensure scalability for thousands of distributors
+- Maintain security and compliance standards with digital agreements
+- Automate onboarding and contracting processes
+
+---
+
+## 2. Product Overview
+
+### 2.1 Product Vision
+Create the industry's most intuitive and powerful MLM back-office platform that empowers Apex Affinity Group distributors to efficiently manage and grow their business while providing complete transparency into their organization's performance, building upon proven successful implementations.
+
+### 2.2 Target Users
+
+**Primary Users:**
+- Active Distributors/Associates
+- Team Leaders
+- Regional Managers (MGAs)
+- Executive Distributors
+
+**Secondary Users:**
+- Corporate Administrators
+- Compliance Officers
+- Support Staff
+- Accounting/Contracting Team
+
+### 2.3 Success Metrics
+- User adoption rate: >90% within 60 days
+- Average session duration: >15 minutes
+- Dashboard load time: <2 seconds
+- Commission calculation accuracy: 100%
+- User satisfaction score: >4.5/5
+- Support ticket reduction: 40%
+- Automated task completion: >80%
+- Contract processing time: <24 hours
+
+---
+
+## 3. Business Requirements
+
+### 3.1 Binary Compensation Plan Structure
+
+**Core Components:**
+- Two-leg structure (left and right teams)
+- Unlimited depth capability
+- Spillover management
+- Binary cycle calculations
+- Power leg/profit leg tracking
+- Automatic placement with manual override options
+
+**Commission Types:**
+- Binary commissions (10-20% of weaker leg volume)
+- Sponsor bonuses with W-9 generation
+- Matching bonuses
+- Rank advancement bonuses
+- Leadership pool participation
+- Override commissions (3-7% based on rank)
+- Quarterly MGA bonuses (auto-calculated)
+- First policy paid bonuses
+
+**Promotion Structure (Proven Model):**
+- Automatic promotions based on:
+  - Number of team new hires per month
+  - Total MGAs on team
+  - Individual/team production percentages
+  - Three-month rolling qualification periods
+- MGA automatic status grant upon promotion
+- Approval workflow: Agent → MGA → Admin
+
+**Mock Data Parameters:**
+- 5,000 sample distributors
+- 12-month historical data including "First Policy Paid" dates
+- Various rank distributions
+- Realistic volume patterns
+- Geographic diversity
+- Contract effective dates with proper timezone handling
+
+### 3.2 Compliance Requirements
+- GDPR compliance for data privacy
+- PCI DSS compliance for payment data
+- MLM regulatory compliance
+- Tax reporting with automatic W-9 generation
+- Digital agreement management and version control
+- Terms of service acceptance tracking
+- Age verification (18+ years)
+- DNC (Do Not Call) status management
+- State-specific compliance tracking
+
+---
+
+## 4. Functional Requirements
+
+### 4.1 Dashboard & Analytics
+
+#### 4.1.1 Main Dashboard
+**Priority:** P0 (Critical)
+
+**Features:**
+- Real-time performance metrics
+- Commission summary widget
+- Team volume indicators
+- Rank progress tracker
+- Recent activity feed
+- Quick action buttons
+- Announcement banner
+- Customizable widget layout
+- **MGA Bonus Progress Widget** (quarterly tracking)
+- **New Recruits Tracker** (first policy paid dates)
+- **Task Management Widget** (pending approvals)
+
+**Key Metrics Display:**
+- Personal Volume (PV)
+- Group Volume (GV)
+- Left leg volume
+- Right leg volume
+- Binary qualification status
+- Current rank with automatic MGA status display
+- Next rank requirements
+- Active personally sponsored count
+- Total team size
+- Month-to-date earnings
+- Year-to-date earnings
+- Pending commissions
+- **Quarterly bonus progress**
+- **Annualized carrier selections**
+
+#### 4.1.2 Analytics Suite
+**Priority:** P1 (High)
+
+**Reports Available:**
+- Sales trends analysis
+- Commission breakdown reports
+- Team performance metrics
+- Geographic distribution maps
+- Product mix analysis
+- Recruitment funnel
+- Retention analytics
+- Comparative period analysis
+- **MGA Bonus Report (Excel export)**
+- **Contract Status Report**
+- **New Hire Performance Report**
+- **Completed Tasks Audit Trail**
+
+**Export Options:**
+- PDF reports
+- Excel spreadsheets with formatted bonus calculations
+- CSV data files
+- Scheduled email delivery
+- Automated quarterly reports
+
+### 4.2 Onboarding & Contracting
+
+#### 4.2.1 Streamlined Registration
+**Priority:** P0 (Critical)
+
+**SSO-Enabled Registration:**
+- Marketing site SSO integration
+- Pre-filled data from SSO:
+  - Name and contact information
+  - Address details
+  - Mentor/sponsor information
+- Simplified first-time login (only DOB and agreements)
+- Email change handling with duplicate prevention
+- Unique ID management (not email-based)
+
+#### 4.2.2 Onboarding Workflow
+**Priority:** P0 (Critical)
+
+**Steps:**
+1. **Profile Completion**
+   - License/Legal name capture
+   - NPN number entry
+   - DNC preference setting
+   - Source tracking (automatically set to "APEX")
+
+2. **Carrier Selection**
+   - Choose 3 carriers for annualization (required)
+   - Carrier selection interface with dropdowns
+   - Product type selection (Life/Annuity)
+
+3. **Agreement Execution**
+   - Digital Writing Agent Agreement
+   - MGA Agreement (upon promotion)
+   - Electronic signature with MGA co-signature
+   - Version control and updates
+   - Re-signing workflow for existing agents
+
+4. **Contracting Integration**
+   - SuranceBay SSO button
+   - "Get Contracted" workflow with email notifications
+   - NLG special handling with confirmation popup
+   - Multiple request capability
+   - Admin task generation for contract requests
+
+**Automated Monitoring:**
+- Stalled onboarding detection
+- Task escalation: Agent → MGA → Admin
+- Inactivation approval workflow
+- Automated follow-up sequences
+
+### 4.3 Integration Hub
+
+#### 4.3.1 SmartOffice Integration
+**Priority:** P0 (Critical)
+
+**Data Synchronization:**
+- Agent profile auto-creation upon registration
+- Real-time profile updates
+- Daily agent number imports
+- Hourly policy imports
+- NPN number synchronization
+- License/Legal name usage
+- DNC status management
+- Source/Sub-Source tagging ("APEX")
+- Pending number replacement logic
+- Contract effective date timezone handling
+
+**Admin Controls:**
+- Carrier/product/status mapping management
+- Manual import/export triggers
+- Error email routing to appropriate admins
+- Integration health monitoring
+- Tech support coordination tools
+
+#### 4.3.2 Third-Party Integrations
+**Priority:** P1 (High)
+
+**Existing Integrations to Maintain:**
+- EZTexting (SMS campaigns)
+- MailChimp (email marketing)
+- SuranceBay (contracting with SSO)
+- SendGrid (transactional emails with domain update support)
+- SmartOffice (CRM and policy management)
+
+**Integration Features:**
+- SSO capabilities across platforms
+- Pending contract filtering (BGA stage imports)
+- Carrier ignore lists (configurable)
+- Error handling and retry logic
+- Webhook support for real-time updates
+
+### 4.4 Genealogy & Downline Management
+
+#### 4.4.1 Binary Tree Visualization
+**Priority:** P0 (Critical)
+
+**Interactive Features:**
+- Expandable/collapsible nodes
+- Drag-to-zoom functionality
+- Search by ID/name
+- Filter by criteria
+- Node information tooltips
+- Color coding by status/rank
+- Print view option
+- Full-screen mode
+- **Hierarchy movement tools** (admin capability)
+- **Manual placement controls**
+
+**Node Information Display:**
+- Distributor name (display and legal)
+- ID number
+- Current rank with MGA indicator
+- Enrollment date
+- Personal volume
+- Group volume
+- Active status
+- Contact information (permission-based)
+- Last order date
+- Qualification status
+- **First policy paid date**
+- **Annualized carriers**
+- **Contract status**
+
+#### 4.4.2 Team Management
+**Priority:** P1 (High)
+
+**Features:**
+- Team roster with sorting/filtering
+- Bulk messaging capabilities
+- Performance tracking by leg
+- Weak leg/strong leg indicators
+- Binary balance calculator
+- Spillover tracking
+- Compression handling
+- **New hire tracking with automatic categorization**
+- **MGA team totals dashboard**
+- **Mentor assignment and updates**
+
+### 4.5 Commission & Compensation
+
+#### 4.5.1 Commission Center
+**Priority:** P0 (Critical)
+
+**Components:**
+- Current period earnings
+- Commission history (24 months)
+- Detailed commission statements
+- Bonus qualification tracking
+- Payment schedule calendar
+- Tax document access
+- Commission disputes/inquiries
+- **Automatic W-9 generation upon bonus earning**
+- **Quarterly MGA bonus calculations**
+- **Annualized carrier commission tracking**
+
+**Commission Types Tracked:**
+- Fast start bonuses
+- Binary commissions
+- Unilevel commissions
+- Matching bonuses
+- Rank advancement bonuses
+- Leadership pool shares
+- Override commissions
+- Special promotions
+- **MGA quarterly bonuses**
+- **New recruit bonuses (first policy paid)**
+- **Annualized carrier overrides**
+
+#### 4.5.2 Automated Calculations
+**Priority:** P0 (Critical)
+
+**Features:**
+- Real-time commission calculations
+- Automatic quarterly bonus processing
+- Promotion-based adjustments
+- Production percentage limits
+- Team volume rollups
+- Override calculations by rank
+- Currency conversion support
+- Retroactive adjustment handling
+
+### 4.6 Administration & Task Management
+
+#### 4.6.1 Task Management System
+**Priority:** P1 (High)
+
+**Task Types:**
+- Promotion approval (MGA → Admin flow)
+- Contract request processing
+- Onboarding monitoring
+- Inactivation approvals
+- Agreement signing reminders
+- Commission dispute resolution
+- Profile update reviews
+
+**Task Features:**
+- Automatic assignment rules
+- Escalation workflows
+- Due date tracking
+- Priority levels
+- Completed task audit trail
+- Email notifications with context
+- Bulk task actions
+
+#### 4.6.2 Admin Controls
+**Priority:** P1 (High)
+
+**Capabilities:**
+- Agreement version management
+- Email template customization
+- Individual email toggle controls
+- Carrier/product mapping
+- Integration credential management
+- Manual data import/export
+- User impersonation for support
+- Hierarchy adjustments
+- Domain migration tools
+
+### 4.7 Communication & Training
+
+#### 4.7.1 Communication Hub
+**Priority:** P2 (Medium)
+
+**Tools:**
+- Corporate announcements
+- Team broadcast messaging
+- Direct messaging system
+- Email integration with SendGrid
+- SMS notifications via EZTexting
+- Push notifications
+- Event calendar
+- Webinar integration
+- **Suggestion box (mailto implementation)**
+- **Automated welcome sequences**
+
+#### 4.7.2 Email Management
+**Priority:** P1 (High)
+
+**Features:**
+- Transactional email tracking
+- Marketing campaign integration (MailChimp)
+- Automated email sequences:
+  - Welcome series
+  - Promotion notifications
+  - Contract status updates
+  - Bonus notifications with W-9
+  - Stalled onboarding alerts
+- Individual opt-out capabilities
+- Domain-based email routing
+
+### 4.8 Recognition & Achievements
+
+#### 4.8.1 Rank Advancement
+**Priority:** P1 (High)
+
+**Features:**
+- Current rank display
+- Rank history timeline
+- Next rank requirements
+- Rank maintenance criteria
+- **Automatic MGA status grant**
+- **Multi-month qualification tracking**
+- **Production percentage requirements**
+- **Team MGA count requirements**
+- Rank recognition certificates
+- Leaderboards
+- Achievement badges
+
+#### 4.8.2 Promotion Management
+**Priority:** P0 (Critical)
+
+**Automated Promotion System:**
+- Monthly new hire counting
+- Team MGA tracking
+- Production percentage validation
+- Three-month rolling windows
+- Automatic level assignment for new agents
+- MGA approval workflow
+- Admin final approval
+- Promotion request forms with data context
+- Email notifications with MGA information
+
+### 4.9 Carrier & Product Management
+
+#### 4.9.1 Carrier Configuration
+**Priority:** P1 (High)
+
+**Features:**
+- Carrier profile management
+- Product catalog maintenance
+- Commission rate tables
+- **Annualization selection (3 carriers)**
+- **State-specific availability (California toggle removal)**
+- **Life/Annuity product dropdowns**
+- Contract status tracking
+- Carrier ignore lists for integrations
+
+#### 4.9.2 Contracting Workflow
+**Priority:** P1 (High)
+
+**Process:**
+- SSO to SuranceBay
+- "Get Contracted" buttons with routing:
+  - Standard carriers → SuranceBay SSO
+  - NLG → Email to contracting team
+- Multiple request handling
+- Confirmation popups
+- Admin task generation
+- Contract effective date management
+- Pending contract imports (BGA stage)
+
+### 4.10 Mobile Responsiveness
+**Priority:** P0 (Critical)
+
+**Requirements:**
+- Fully responsive design
+- Touch-optimized interfaces
+- Mobile-specific navigation
+- Progressive web app capabilities
+- Offline mode for critical features
+- Native app considerations (Phase 2)
+
+---
+
+## 5. Non-Functional Requirements
+
+### 5.1 Performance Requirements
+- Page load time: <2 seconds (95th percentile)
+- API response time: <500ms (average)
+- Concurrent users: Support 10,000+
+- Database queries: <100ms
+- Real-time updates: <1 second delay
+- Uptime: 99.9% availability
+- Batch processing: Quarterly calculations < 1 hour
+
+### 5.2 Security Requirements
+- SSL/TLS encryption
+- Role-based access control (RBAC)
+- Session timeout after 30 minutes
+- Password complexity requirements
+- Account lockout after failed attempts
+- Audit logging for all transactions
+- PII data encryption at rest
+- OWASP top 10 compliance
+- Digital signature compliance
+- Agreement version control
+
+### 5.3 Domain & Infrastructure
+- Support for domain migration (reachtheapex.com)
+- Azure configuration management
+- DNS update coordination
+- SSL certificate management
+- Email deliverability maintenance
+- CDN integration
+- Load balancing
+
+---
+
+## 6. Data Requirements
+
+### 6.1 Data Model Overview
+
+#### 6.1.1 Core Entities
+- Distributor profiles (display and legal names)
+- Binary tree structure with placement tracking
+- Commission records with quarterly calculations
+- Transaction history
+- Product catalog
+- Order records
+- Rank qualifications with multi-month tracking
+- Volume calculations
+- **Agreement versions and signatures**
+- **Task management records**
+- **Integration sync logs**
+- **Annualized carrier selections**
+- **First policy paid dates**
+
+#### 6.1.2 Data Synchronization
+- SmartOffice bi-directional sync
+- SuranceBay contract status
+- Email platform subscriber lists
+- SMS platform contact lists
+- Real-time SSO session management
+
+### 6.2 Mock Data Specifications
+**Distributor Data:**
+- 5,000 unique distributor records
+- Legal and display names
+- NPN numbers
+- Geographic distribution
+- Various enrollment dates (12-month span)
+- Rank distribution (pyramid structure)
+- Activity status variation
+- MGA status indicators
+- Annualized carrier selections
+
+**Sales Data:**
+- 100,000+ transaction records
+- Product mix variations
+- Seasonal patterns
+- Return/refund scenarios
+- Autoship orders
+- One-time purchases
+- First policy paid tracking
+
+**Commission Data:**
+- Weekly commission runs
+- Quarterly MGA bonuses
+- Multiple commission types
+- Bonus qualifications
+- Override calculations
+- Historical adjustments
+- W-9 generation records
+
+### 6.3 Data Retention Policies
+- Transaction data: 7 years
+- Commission statements: 7 years
+- User activity logs: 2 years
+- System logs: 90 days
+- Deleted user data: 30-day recovery
+- Backup retention: 90 days
+- Agreement versions: Permanent
+- Task history: 2 years
+
+---
+
+## 7. Implementation Timeline
+
+### Phase 1: Foundation & Core Systems (Weeks 1-4)
+- SSO implementation with Marketing Site
+- Core authentication integration
+- Basic dashboard implementation
+- Database schema design
+- Mock data generation with proven structure
+- SmartOffice integration setup
+- Agreement management system
+
+### Phase 2: Onboarding & Contracting (Weeks 5-8)
+- Streamlined registration flow
+- Digital agreement execution
+- SuranceBay SSO integration
+- Carrier selection interface
+- Contracting workflow
+- Automated onboarding monitoring
+- Task management system
+
+### Phase 3: Compensation & Commissions (Weeks 9-12)
+- Binary tree visualization
+- Commission calculation engine
+- Quarterly bonus automation
+- W-9 generation system
+- Promotion automation
+- MGA bonus tracking
+- Override calculations
+
+### Phase 4: Advanced Features (Weeks 13-16)
+- Advanced analytics with Excel exports
+- Email automation sequences
+- Mobile optimization
+- Completed task audit trails
+- Domain migration preparation
+- Performance optimization
+- Beta testing with real data
+
+### Phase 5: Launch & Migration (Weeks 17-18)
+- Production deployment
+- Domain migration execution
+- Data migration from existing system
+- User training
+- Support team preparation
+- Go-live monitoring
+
+---
+
+## 8. Success Criteria
+
+### 8.1 Launch Criteria
+- All P0 features implemented
+- Performance benchmarks met
+- Security audit passed
+- 95% test coverage
+- Documentation complete
+- Training materials ready
+- Support team trained
+- SmartOffice integration verified
+- Domain migration tested
+
+### 8.2 Post-Launch Metrics
+- 90% user adoption within 60 days
+- <1% critical bug rate
+- 99.9% uptime achieved
+- Average response time <2 seconds
+- User satisfaction >4.5/5
+- Support ticket volume manageable
+- 80% of tasks auto-processed
+- Zero commission calculation errors
+
+---
+
+## 9. Migration Considerations
+
+### 9.1 Data Migration
+- Existing agent profiles with legal/display names
+- Historical commission data
+- Binary tree structure preservation
+- Agreement history and signatures
+- Task history
+- Integration mappings
+
+### 9.2 System Cutover
+- Parallel run period (2 weeks)
+- Gradual user migration
+- Integration switchover coordination
+- Email/SMS platform updates
+- Domain DNS updates
+- SSL certificate installation
+
+---
+
+## 10. Lessons Learned Integration
+
+### 10.1 Proven Successful Features
+Based on the previous implementation, these features have proven essential:
+
+**Automation Wins:**
+- Quarterly bonus auto-calculation
+- W-9 automatic generation
+- Promotion automation with approval workflow
+- Onboarding monitoring with escalation
+- SmartOffice bi-directional sync
+
+**User Experience Improvements:**
+- SSO across all platforms
+- Simplified registration for SSO users
+- One-click contracting
+- MGA co-signature on agreements
+- Task-based workflow management
+
+**Administrative Efficiencies:**
+- Completed task audit trails
+- Manual override capabilities
+- Individual email toggles
+- Excel report exports
+- Error email routing
+
+### 10.2 Areas for Enhancement
+Building on the previous system:
+
+**Technical Improvements:**
+- Use actual unique IDs instead of email for SSO
+- Implement three-month promotion requirements
+- Add more robust duplicate handling
+- Enhance timezone handling
+- Improve error recovery
+
+**Feature Additions:**
+- Visual binary tree (not in previous system)
+- Real-time commission tracking
+- Mobile app version
+- Advanced analytics
+- Predictive modeling
+
+---
+
+## 11. Risk Mitigation
+
+### 11.1 Technical Risks
+**Risk:** Integration dependencies  
+**Mitigation:** Maintain fallback manual processes, comprehensive error handling
+
+**Risk:** Data migration complexity  
+**Mitigation:** Phased migration, parallel run period, rollback procedures
+
+**Risk:** SSO email-based ID issues  
+**Mitigation:** Implement proper unique ID system from start
+
+### 11.2 Business Risks
+**Risk:** User adoption from existing system  
+**Mitigation:** Feature parity plus enhancements, comprehensive training
+
+**Risk:** Commission calculation accuracy  
+**Mitigation:** Parallel calculation period, extensive testing with real scenarios
+
+---
+
+## 12. Appendices
+
+### Appendix A: Integration Specifications
+**SmartOffice API:**
+- Profile sync endpoints
+- Policy import schedule
+- Agent number management
+- Error handling procedures
+
+**SuranceBay SSO:**
+- Authentication flow
+- Contract status webhooks
+- Carrier ignore list
+- BGA stage filtering
+
+**Email/SMS Platforms:**
+- SendGrid configuration
+- MailChimp list management
+- EZTexting integration
+- Domain-based routing
+
+### Appendix B: Agreement Templates
+- Writing Agent Agreement (current version)
+- MGA Agreement
+- Terms and Conditions
+- Version control process
+- Re-signing workflows
+
+### Appendix C: Promotion Rules
+**Monthly Requirements:**
+- New hire thresholds by level
+- MGA count requirements
+- Production percentage limits
+- Three-month rolling qualification
+
+**Binary Compensation Details:**
+- Commission percentages by rank
+- Override structures
+- Bonus calculations
+- Quarterly MGA bonuses
+
+### Appendix D: Task Workflows
+- Promotion approval flow
+- Contract request handling
+- Onboarding monitoring
+- Inactivation process
+- Agreement execution
+
+---
+
