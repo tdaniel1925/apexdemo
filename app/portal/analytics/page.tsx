@@ -45,8 +45,8 @@ export default function AnalyticsPage() {
       return acc;
     }, {} as Record<string, number>);
     
-    const total = Object.values(types).reduce((sum, val) => sum + val, 0);
-    return Object.entries(types).map(([type, amount]) => ({
+    const total = Object.values(types).reduce((sum: number, val: number) => sum + val, 0);
+    return Object.entries(types).map(([type, amount]: [string, number]) => ({
       type,
       amount,
       percentage: (amount / total) * 100
@@ -60,8 +60,8 @@ export default function AnalyticsPage() {
     }, {} as Record<string, number>);
     
     return Object.entries(states)
-      .map(([state, count]) => ({ state, count }))
-      .sort((a, b) => b.count - a.count);
+      .map(([state, count]: [string, number]) => ({ state, count }))
+      .sort((a, b) => (b.count as number) - (a.count as number));
   }
 
   const handleExportPDF = () => {
@@ -252,8 +252,8 @@ export default function AnalyticsPage() {
                       {commissionTypeLabels[item.type] || item.type}
                     </span>
                     <div className="text-right">
-                      <span className="font-bold text-gray-900">${item.amount.toLocaleString()}</span>
-                      <span className="text-gray-500 ml-2">({item.percentage.toFixed(1)}%)</span>
+                      <span className="font-bold text-gray-900">${(item.amount as number).toLocaleString()}</span>
+                      <span className="text-gray-500 ml-2">({(item.percentage as number).toFixed(1)}%)</span>
                     </div>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -278,7 +278,7 @@ export default function AnalyticsPage() {
                     <span className="font-medium text-gray-900">{geo.state}</span>
                   </div>
                   <div className="text-right">
-                    <span className="font-bold text-gray-900">{geo.count}</span>
+                    <span className="font-bold text-gray-900">{geo.count as number}</span>
                     <span className="text-xs text-gray-500 ml-1">members</span>
                   </div>
                 </div>
