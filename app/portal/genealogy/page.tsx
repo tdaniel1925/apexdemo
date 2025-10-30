@@ -156,6 +156,9 @@ export default function GenealogyPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [scale, setScale] = useState(1);
   const [mounted, setMounted] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [scrollStart, setScrollStart] = useState({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -179,6 +182,34 @@ export default function GenealogyPage() {
 
   const handleNodeClick = (node: TreeNode) => {
     setSelectedNode(node);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return;
+    setIsDragging(true);
+    setDragStart({ x: e.clientX, y: e.clientY });
+    setScrollStart({
+      x: containerRef.current.scrollLeft,
+      y: containerRef.current.scrollTop
+    });
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging || !containerRef.current) return;
+    
+    const deltaX = e.clientX - dragStart.x;
+    const deltaY = e.clientY - dragStart.y;
+    
+    containerRef.current.scrollLeft = scrollStart.x - deltaX;
+    containerRef.current.scrollTop = scrollStart.y - deltaY;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
   };
 
   if (!mounted) {
@@ -277,16 +308,26 @@ export default function GenealogyPage() {
           <div className="lg:col-span-3">
             {viewMode === "tree" ? (
               <div className="bg-white rounded-lg shadow p-6">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4 text-center">
+                  <p className="text-sm text-blue-800">
+                    <strong>💡 Tip:</strong> Click and drag to pan around the tree, or use the zoom controls above
+                  </p>
+                </div>
                 <div
                   ref={containerRef}
-                  className="overflow-auto"
+                  className={`overflow-auto ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
                   style={{ maxHeight: "800px" }}
+                  onMouseDown={handleMouseDown}
+                  onMouseMove={handleMouseMove}
+                  onMouseUp={handleMouseUp}
+                  onMouseLeave={handleMouseLeave}
                 >
                   <div
                     style={{
                       transform: `scale(${scale})`,
                       transformOrigin: "top center",
-                      transition: "transform 0.2s"
+                      transition: isDragging ? "none" : "transform 0.2s",
+                      userSelect: isDragging ? "none" : "auto"
                     }}
                     className="inline-block min-w-full py-8"
                   >
