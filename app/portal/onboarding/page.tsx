@@ -441,6 +441,7 @@ export default function OnboardingPage() {
             </button>
           )}
         </div>
+      </div>
       </DashboardLayout>
   );
 }
